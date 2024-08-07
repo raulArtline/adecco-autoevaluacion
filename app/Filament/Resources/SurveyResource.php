@@ -82,7 +82,7 @@ class SurveyResource extends Resource
                     ->button()
                     ->icon('heroicon-m-pencil-square')
                     ->copyable(function ($record) {
-                        return config('app.url') . $record->uuid;
+                        return config('app.url') . '/' . $record->uuid;
                     }),
                 Tables\Actions\EditAction::make(),
                 // ->successRedirectUrl(route('surveys.list')),

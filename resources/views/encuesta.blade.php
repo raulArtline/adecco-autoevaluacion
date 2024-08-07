@@ -1,5 +1,5 @@
 <x-layouts.app>
 
-    <h1 class="text-3xl">Encuesta</h1>
+    <livewire:autoeval-component />
 
 </x-layouts.app>
