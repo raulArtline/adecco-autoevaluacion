@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* font family lust */
+@font-face {
+    font-family: "lust_regular";
+    src: url("/public/fonts/lust/Lust-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: "Neutraface";
+    src: url("/public/fonts/neutraface/NeutrafaceText-Book.woff") format("woff");
+}
+@font-face {
+    font-family: "NeutrafaceBold";
+    src: url("/public/fonts/neutraface/NeutrafaceText-Bold.woff") format("woff");
+}
+
+body {
+    font-family: "Neutraface";
+}
+
+.home {
+    background: url("/public/img/bg_home.jpg") no-repeat center/cover;
+}
+
+.bocadillo:after {
+    content: "";
+    border-bottom: 2px dashed #54c3bd;
+    border-right: 2px dashed #54c3bd;
+    border-left: 0px dashed #54c3bd;
+    background-color: #fff;
+    position: absolute;
+    right: -36px;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    transform: rotate(-45deg) translateY(-50%);
+}
