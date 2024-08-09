@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
     content: [
-		"./resources/**/*.blade.php",
-		 "./resources/**/*.js",
-		 "./vendor/robsontenorio/mary/src/View/Components/**/*.php"
-	],
+        "./resources/**/*.blade.php",
+        "./resources/**/*.js",
+        "./vendor/robsontenorio/mary/src/View/Components/**/*.php",
+    ],
     theme: {
         extend: {
             fontFamily: {
@@ -17,7 +17,15 @@ export default {
             },
         },
     },
-    plugins: [
-		require("daisyui")
-	],
+    daisyui: {
+        themes: [
+            {
+                light: {
+                    ...require("daisyui/src/theming/themes")["light"],
+                    accent: "#54c3bd",
+                },
+            },
+        ],
+    },
+    plugins: [require("daisyui")],
 };
