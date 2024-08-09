@@ -32,7 +32,8 @@
                 {{-- contendido de la autevaluacion --}}
                 <section class="content-eval rounded-3xl bg-white w-full min-h-96 p-16">
                     <x-autoevaluacion.bloque1 />
-                    {{-- <x-autoevaluacion.bloque2 /> --}}
+                    <x-autoevaluacion.bloque2 class="mt-20" />
+                    <x-autoevaluacion.bloque3 class="mt-20" />
                     <x-autoevaluacion.navegacion />
                 </section>
 

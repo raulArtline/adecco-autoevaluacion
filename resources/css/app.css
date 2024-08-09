@@ -12,6 +12,13 @@
     @apply focus:border-verde-adecco focus:outline-verde-adecco;
 }
 
+.btn-rounded {
+    @apply rounded-full w-10 h-10 bg-verde-adecco text-white flex items-center justify-center cursor-pointer border border-verde-adecco hover:bg-white hover:text-verde-adecco transition-all;
+}
+.btn-rounded.disabled {
+    @apply cursor-default bg-transparent text-[#8987A1]  border-[#8987A1];
+}
+
 @font-face {
     font-family: "lust_regular";
     src: url("/public/fonts/lust/Lust-Regular.woff") format("woff");
@@ -46,4 +53,11 @@ body {
     width: 40px;
     height: 40px;
     transform: rotate(-45deg) translateY(-50%);
+}
+
+/* modificar estilo del rating de daisyUI */
+.rating input:checked ~ input,
+.rating input[aria-checked="true"] ~ input {
+    /* --tw-bg-opacity: 0.2; */
+    background-color: #ccc;
 }
