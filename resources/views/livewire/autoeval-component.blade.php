@@ -35,6 +35,7 @@
                     <x-autoevaluacion.bloque2 class="mt-20" />
                     <x-autoevaluacion.bloque3 class="mt-20" />
                     <x-autoevaluacion.bloque4 class="mt-20" />
+                    <x-autoevaluacion.bloque5 class="mt-20" />
                     <x-autoevaluacion.navegacion />
                 </section>
 
