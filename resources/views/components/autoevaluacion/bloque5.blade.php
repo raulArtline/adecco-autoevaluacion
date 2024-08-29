@@ -10,7 +10,7 @@
 
     <div class="question text-center">
         <p class="mt-3 text-left">(*) Obligatorio.</p>
-        <h4 class=" text-verde-adecco text-2xl mt-7">
+        <h4 class=" text-verde-adecco text-2xl mt-28">
             <span class="p-number">18. </span> Sesgo de afinidad o similitud: (*)
         </h4>
         <h4 class="text-xl">Tendencia a ser amigables con las personas que se parecen a ti, preferir a la gente con la
@@ -25,7 +25,7 @@
     </div>
     <!--  -->
     <div class="question text-center">
-        <h4 class=" text-verde-adecco text-2xl mt-7">
+        <h4 class=" text-verde-adecco text-2xl mt-28">
             <span class="p-number">19. </span> Efecto de arrastre o pensamiento grupal (*)
         </h4>
         <h4 class="text-xl">Muy común en grupos de trabajo. Ocurre cuando las personas que forman un equipo se esfuerza
@@ -37,7 +37,7 @@
     </div>
     <!--  -->
     <div class="question text-center">
-        <h4 class=" text-verde-adecco text-2xl mt-7">
+        <h4 class=" text-verde-adecco text-2xl mt-28">
             <span class="p-number">20. </span> Efecto Halo (Sesgo de primera impresión) (*)
         </h4>
         <h4 class="text-xl">Tendencia a pensar que, si nuestra primera impresión de alguien fue buena, todas sus
@@ -49,7 +49,7 @@
     </div>
     <!--  -->
     <div class="question text-center">
-        <h4 class=" text-verde-adecco text-2xl mt-7">
+        <h4 class=" text-verde-adecco text-2xl mt-28">
             <span class="p-number">21. </span> Efecto Horns (*)
         </h4>
         <h4 class="text-xl">Es el sesgo opuesto al efecto Halo, es decir, la tendencia a que la percepción de una
@@ -61,7 +61,7 @@
     </div>
     <!--  -->
     <div class="question text-center">
-        <h4 class=" text-verde-adecco text-2xl mt-7">
+        <h4 class=" text-verde-adecco text-2xl mt-28">
             <span class="p-number">22. </span> Sesgo de confirmación (*)
         </h4>
         <h4 class="text-xl">Tendencia a valorar aquellas creencias, ideas o hipótesis que confirman las nuestras propias
@@ -72,7 +72,7 @@
     </div>
     <!--  -->
     <div class="question text-center">
-        <h4 class=" text-verde-adecco text-2xl mt-7">
+        <h4 class=" text-verde-adecco text-2xl mt-28">
             <span class="p-number">23. </span> Sesgo de proyección (*)
         </h4>
         <h4 class="text-xl">Es la tendencia a asumir que las demás personas comparten los mismos pensamientos,
@@ -84,7 +84,7 @@
     </div>
     <!--  -->
     <div class="question text-center">
-        <h4 class=" text-verde-adecco text-2xl mt-7">
+        <h4 class=" text-verde-adecco text-2xl mt-28">
             <span class="p-number">24. </span> Sesgo de atribución (*)
         </h4>
         <h4 class="text-xl">Se refiere a cómo percibimos nuestras acciones y las de las demás personas. Tendemos a
@@ -97,7 +97,7 @@
     </div>
     <!--  -->
     <div class="question text-center">
-        <h4 class=" text-verde-adecco text-2xl mt-7">
+        <h4 class=" text-verde-adecco text-2xl mt-28">
             <span class="p-number">25. </span> Sesgo por nombres, raza, edad, género e incluso altura o apariencia (*)
         </h4>
         <h4 class="text-xl">Tendencia a discriminar de manera inconsciente en procesos de selección o en procesos de
@@ -108,7 +108,7 @@
     </div>
     <!--  -->
     <div class="question text-center">
-        <h4 class=" text-verde-adecco text-2xl mt-7">
+        <h4 class=" text-verde-adecco text-2xl mt-28">
             <span class="p-number">26. </span> Sesgo de percepción (*)
         </h4>
         <h4 class="text-xl">El sesgo de percepción es la tendencia a formar prejuicios y generalizaciones sobre ciertos
@@ -120,7 +120,7 @@
     </div>
     <!--  -->
     <div class="question text-center">
-        <h4 class=" text-verde-adecco text-2xl mt-7">
+        <h4 class=" text-verde-adecco text-2xl mt-28">
             <span class="p-number">27. </span> Metasesgo (*)
         </h4>
         <h4 class="text-xl">El primer sesgo sobre el que debemos ser conscientes es el sesgo del punto ciego por el cual

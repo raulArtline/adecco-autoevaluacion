@@ -17,7 +17,7 @@
             class="answer flex gap-2 justify-between" />
     </div>
     {{--  --}}
-    <div class="question text-center mt-20">
+    <div class="question text-center mt-28">
         <h4 class=" text-verde-adecco text-2xl mt-7">
             <span class="p-number">8. </span> ¿Sabrías explicar la diferencia entre <strong>diversidad</strong> e
             <strong>inclusión</strong> y entre
@@ -29,7 +29,7 @@
             class="answer flex gap-2 justify-between" />
     </div>
     {{--  --}}
-    <div class="question text-center mt-20">
+    <div class="question text-center mt-28">
         <h4 class=" text-verde-adecco text-2xl mt-7">
             <span class="p-number">9. </span> ¿Sabes qué son y cuáles son la <strong>dimensiones de la
                 diversidad</strong>? (*)
@@ -40,7 +40,7 @@
             class="answer flex gap-2 justify-between" />
     </div>
     {{--  --}}
-    <div class="question text-center mt-20">
+    <div class="question text-center mt-28">
         <h4 class=" text-verde-adecco text-2xl mt-7">
             <span class="p-number">10. </span> ¿Conoces la diferencia entre <strong>
                 diversidad demográfica, experiencial y
@@ -53,7 +53,7 @@
             class="answer flex gap-2 justify-between" />
     </div>
     {{--  --}}
-    <div class="question text-center mt-20">
+    <div class="question text-center mt-28">
         <h4 class=" text-verde-adecco text-2xl mt-7">
             <span class="p-number">11. </span>¿Sabes qué son los <strong>sesgos inconscientes</strong>? (*)
         </h4>
@@ -63,7 +63,7 @@
             class="answer flex gap-2 justify-between" />
     </div>
     {{--  --}}
-    <div class="question text-center mt-20">
+    <div class="question text-center mt-28">
         <h4 class=" text-verde-adecco text-2xl mt-7">
             <span class="p-number">12. </span>¿Sabrías decir cuáles son los principales <strong>
                 retos para el desarrollo social
@@ -76,7 +76,7 @@
             class="answer flex gap-2 justify-between" />
     </div>
     {{--  --}}
-    <div class="question text-center mt-20">
+    <div class="question text-center mt-28">
         <h4 class="text-verde-adecco text-2xl mt-7">
             <span class="p-number">13. </span>¿Sabrías explicar qué es un <strong>Champion de Diversidad</strong> o
             <strong>
@@ -90,7 +90,7 @@
             class="answer flex gap-2 justify-between" />
     </div>
     {{--  --}}
-    <div class="question text-center mt-20">
+    <div class="question text-center mt-28">
         <h4 class="text-verde-adecco text-2xl mt-7">
             <span class="p-number">14. </span>En relación a la composición de equipos y la diversidad, ¿sabrías la
             diferencia entre un <strong>"equipo"</strong>, una <strong>"tribu"</strong> y un
@@ -102,7 +102,7 @@
             class="answer flex gap-2 justify-between" />
     </div>
     {{--  --}}
-    <div class="question text-center mt-20">
+    <div class="question text-center mt-28">
         <h4 class="text-verde-adecco text-2xl mt-7">
             <span class="p-number">15. </span>¿Sabes a qué hace referencia la <strong>ruta a la inclusión</strong> o
             <strong>inclusión journey</strong>? (*)
@@ -113,7 +113,7 @@
             class="answer flex gap-2 justify-between" />
     </div>
     {{--  --}}
-    <div class="question text-center mt-20">
+    <div class="question text-center mt-28">
         <h4 class="text-verde-adecco text-2xl mt-7">
             <span class="p-number">16. </span>¿Sabes cuál es la diferencia entre <strong>selección laboral, selección
                 inclusiva e inclusión laboral</strong>? (*)
@@ -124,7 +124,7 @@
             class="answer flex gap-2 justify-between" />
     </div>
     {{--  --}}
-    <div class="question text-center mt-20">
+    <div class="question text-center mt-28">
         <h4 class="text-verde-adecco text-2xl mt-7">
             <span class="p-number">17. </span>¿Sabes cuáles son las claves para crear una <strong>marca
                 inclusiva</strong>? (*)
