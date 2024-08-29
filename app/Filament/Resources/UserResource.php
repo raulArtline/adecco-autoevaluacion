@@ -50,9 +50,9 @@ class UserResource extends Resource
                     ->rule('regex:/^[\w\.-]+@[\w\.-]+\.[a-zA-Z]{2,}$/')
                     ->unique()
                     ->required()
-                    ->dehydrated(fn ($state) => filled($state))
-                    ->required(fn (string $context): bool => $context === 'create')
-                    ->helperText(fn (string $context): string | null => $context === 'edit' ? 'Dejar vacio si no se desea editar' : null)
+                    ->dehydrated(fn($state) => filled($state))
+                    ->required(fn(string $context): bool => $context === 'create')
+                    ->helperText(fn(string $context): string | null => $context === 'edit' ? 'Dejar vacio si no se desea editar' : null)
                     ->validationMessages([
                         'unique' => 'El :attribute ya existe en el sistema.',
                         'email' => 'El :attribute debe ser una dirección de correo válida.',
@@ -61,10 +61,11 @@ class UserResource extends Resource
                 TextInput::make('password')
                     ->label('Contraseña')
                     ->password()
-                    ->dehydrateStateUsing(fn ($state) => !empty($state) ? Hash::make($state) : null)
-                    ->dehydrated(fn ($state) => filled($state))
-                    ->required(fn (string $context): bool => $context === 'create')
-                    ->helperText(fn (string $context): string | null => $context === 'edit' ? 'Dejar vacio si no se desea editar' : null)
+                    ->revealable()
+                    ->dehydrateStateUsing(fn($state) => !empty($state) ? Hash::make($state) : null)
+                    ->dehydrated(fn($state) => filled($state))
+                    ->required(fn(string $context): bool => $context === 'create')
+                    ->helperText(fn(string $context): string | null => $context === 'edit' ? 'Dejar vacio si no se desea editar' : null)
                     ->rules([
                         'string',
                         'min:6',
@@ -91,8 +92,8 @@ class UserResource extends Resource
                 TextColumn::make('is_admin')
                     ->label('Perfil')
                     ->badge()
-                    ->formatStateUsing(fn (string $state): string => $state == '1' ? 'Admin' : 'Editor')
-                    ->color(fn (string $state): string => $state == '1' ? 'success' : 'warning'),
+                    ->formatStateUsing(fn(string $state): string => $state == '1' ? 'Admin' : 'Editor')
+                    ->color(fn(string $state): string => $state == '1' ? 'success' : 'warning'),
             ])
             ->filters([
                 // Tables\Filters\TrashedFilter::make(),

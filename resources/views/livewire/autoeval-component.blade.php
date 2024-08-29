@@ -26,14 +26,15 @@
                         </p>
                     </div>
                     {{-- foto --}}
-                    <img class="h-[650px] -ml-40 mt-5" src="img/img_chica.webp" alt="">
+                    <img class="h-[575px] -ml-40 mt-5" src="img/img_chica.webp" alt="">
                 </div>
 
                 {{-- contendido de la autevaluacion --}}
-                <section class="content-eval rounded-3xl bg-white w-full min-h-96 p-16">
+                <section class="content-eval rounded-3xl bg-white shadow-xl w-full min-h-96 p-16">
                     <x-autoevaluacion.bloque1 />
                     <x-autoevaluacion.bloque2 class="mt-20" />
                     <x-autoevaluacion.bloque3 class="mt-20" />
+                    <x-autoevaluacion.bloque4 class="mt-20" />
                     <x-autoevaluacion.navegacion />
                 </section>
 

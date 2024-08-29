@@ -13,4 +13,21 @@
         independientemente
         de su condición e identidad.
     </x-autoevaluacion.header>
+
+    <div class="question text-center">
+        <p class="mt-3 text-left">(*) Obligatorio.</p>
+        <h4 class=" text-verde-adecco text-2xl font-bold mt-7">
+            <span class="p-number">6. </span>
+            ¿Cuál dirías que es tu nivel de interés y compromiso con
+            la
+            Diversidad,
+            Equidad
+            e
+            Inclusión? (*)
+        </h4>
+
+        <x-autoevaluacion.custom-range pretext="Ningún compromiso" postext="Muy comprometido/a"
+            class="aswer flex gap-2 justify-between" />
+    </div>
+
 </article>

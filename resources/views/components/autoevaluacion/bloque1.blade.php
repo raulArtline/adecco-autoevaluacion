@@ -10,46 +10,55 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mt-10">
         <div class="form-control w-full">
-            <div class="label">
-                <span class="font-lust">Nombre</span>
+            <div class="question">
+                <div class="label">
+                    <span class="font-lust"><span class="p-number">1. </span>Nombre</span>
+                </div>
+                <x-autoevaluacion.custom-input type="text" placeholder="Escribe tu respuesta"
+                    class="answer input input-bordered text-lg focus-verde" />
             </div>
-            <x-autoevaluacion.custom-input type="text" placeholder="Escribe tu respuesta"
-                class="input input-bordered text-lg focus-verde" />
         </div>
         {{--  --}}
         <div class="form-control w-full">
-            <div class="label">
-                <span class="font-lust">Edad</span>
+            <div class="question">
+                <div class="label">
+                    <span class="font-lust"><span class="p-number">2. </span>Edad</span>
+                </div>
+                <x-autoevaluacion.custom-select :options="[
+                    '1' => 'Menor a 18',
+                    '2' => '18 - 24 años',
+                    '3' => '25 - 34 años',
+                    '4' => '35 - 44 años',
+                    '5' => '45 - 54 años',
+                    '6' => '+ de 55 años',
+                ]" placeholder="Selecciona tu edad" class="answer" />
+
             </div>
-            <x-autoevaluacion.custom-select :options="[
-                '1' => 'Menor a 18',
-                '2' => '18 - 24 años',
-                '3' => '25 - 34 años',
-                '4' => '35 - 44 años',
-                '5' => '45 - 54 años',
-                '6' => '+ de 55 años',
-            ]" placeholder="Selecciona tu edad" />
         </div>
         {{--  --}}
         <div class="form-control w-full">
-            <div class="label">
-                <span class="font-lust">Género</span>
+            <div class="question">
+                <div class="label">
+                    <span class="font-lust"><span class="p-number">3. </span>Género</span>
+                </div>
+                <x-autoevaluacion.custom-select :options="[
+                    '1' => 'Masculino',
+                    '2' => 'Femenino',
+                    '3' => 'Otro',
+                    '4' => 'Prefiero no especificar',
+                ]" placeholder="Selecciona tu género" class="answer" />
             </div>
-            <x-autoevaluacion.custom-select :options="[
-                '1' => 'Masculino',
-                '2' => 'Femenino',
-                '3' => 'Otro',
-                '4' => 'Prefiero no especificar',
-            ]" placeholder="Selecciona tu género" />
         </div>
 
         {{--  --}}
         <div class="form-control w-full">
-            <div class="label">
-                <span class="font-lust">Antigüedad</span>
+            <div class="question">
+                <div class="label">
+                    <span class="font-lust"><span class="p-number">4. </span>Antigüedad</span>
+                </div>
+                <x-autoevaluacion.custom-input type="text" placeholder="Escribe tu respuesta"
+                    class="answer input input-bordered text-lg focus-verde" />
             </div>
-            <x-autoevaluacion.custom-input type="text" placeholder="Escribe tu respuesta"
-                class="input input-bordered text-lg focus-verde" />
         </div>
 
     </div>
