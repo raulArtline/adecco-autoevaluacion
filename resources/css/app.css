@@ -32,13 +32,23 @@
     src: url("/public/fonts/neutraface/NeutrafaceText-Bold.woff") format("woff");
 }
 
+/* html {
+    scroll-behavior: smooth;
+} */
+
 body {
     font-family: "Neutraface";
     color: #000;
+    scroll-behavior: smooth;
 }
 
 .home {
     background: url("/public/img/bg_home.jpg") no-repeat center/cover;
+    background-attachment: fixed;
+}
+
+.img-cover {
+    mask-image: linear-gradient(black 50%, transparent);
 }
 
 .bocadillo:after {

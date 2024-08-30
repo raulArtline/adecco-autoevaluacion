@@ -20,11 +20,11 @@
           </p>
           <div class="answer rating rating-lg mt-5">
             <input type="radio" name="rating" class="rating-hidden" checked />
-            <input type="radio" name="rating" class="mask mask-star-2 bg-verde-adecco" />
-            <input type="radio" name="rating" class="mask mask-star-2 bg-verde-adecco" />
-            <input type="radio" name="rating" class="mask mask-star-2 bg-verde-adecco" />
-            <input type="radio" name="rating" class="mask mask-star-2 bg-verde-adecco" />
-            <input type="radio" name="rating" class="mask mask-star-2 bg-verde-adecco" />
+            <input type="radio" name="rating" data-stars="1 estrella" class="mask mask-star-2 bg-verde-adecco" />
+            <input type="radio" name="rating" data-stars="2 estrellas" class="mask mask-star-2 bg-verde-adecco" />
+            <input type="radio" name="rating" data-stars="3 estrellas" class="mask mask-star-2 bg-verde-adecco" />
+            <input type="radio" name="rating" data-stars="4 estrellas" class="mask mask-star-2 bg-verde-adecco" />
+            <input type="radio" name="rating" data-stars="5 estrellas" class="mask mask-star-2 bg-verde-adecco" />
           </div>
         </div>
       </div>

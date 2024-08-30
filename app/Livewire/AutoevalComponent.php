@@ -9,6 +9,7 @@ class AutoevalComponent extends Component
 {
 
     public Survey $survey;
+    public $data = [];
 
     public function mount($id)
     {
