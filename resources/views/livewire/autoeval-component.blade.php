@@ -97,17 +97,15 @@
         // SELECT number
 
         $$('.number').forEach(answer => {
-          answer.addEventListener('click', () => {
-            // buscamos el id la question padre de este elemento
-            const question = answer.closest('.question');
-            const questionId = question.id;
-            // const questionNumber = questionId.split('-')[1];
-            // marcamos con la clase .selected
-            $$('.number').forEach(number => {
-
-
-            })
-            // answer.classList.add('selected');
+          answer.addEventListener('click', ({
+            target
+          }) => {
+            console.log("🚀 ~ answer.addEventListener ~ target:", target)
+            // buscamos el padre de este elemento
+            const questionParent = target.closest('.question');
+            // remove clase .selected de this questionParent
+            questionParent.querySelectorAll('.number').forEach(number => number.classList.remove('selected'));
+            target.classList.add('selected');
 
 
           });
