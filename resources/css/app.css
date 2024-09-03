@@ -78,3 +78,7 @@ body {
 .number.selected {
     @apply bg-gradient-to-r  from-[#F5D66E] to-[#54C3BD];
 }
+
+.radio-custom {
+    @apply radio radio-success pointer-events-none;
+}
