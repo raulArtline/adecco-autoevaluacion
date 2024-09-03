@@ -55,7 +55,7 @@
 
         // Runs immediately after Livewire has finished initializing
         // on the page...
-        console.log("livewire:initialized'");
+        console.log("livewire:initialized");
         let survey = @json($survey);
         const {
           client,
@@ -64,7 +64,7 @@
 
         let component = @this;
         let dataAswers = {
-          "question-1": "Ad dolor et quo aut ",
+          "question-1": "RAul",
           "question-2": "45-54 años",
           "question-3": "Masculino",
           "question-4": "Quo sunt eu dicta co",
@@ -108,6 +108,16 @@
         irPage(1)
 
         console.log("🚀 ~ totalQuestionsHTML:", totalQuestionsHTML)
+
+        // pruebas
+        $('#enviar').addEventListener('click', (e) => {
+          e.preventDefault(); // Evita el envío del formulario
+          component.set('data', dataAswers, false);
+          component.saveResults().then((res) => {
+            console.log(res)
+          });
+
+        })
 
         function initSurvey() {
           // add ids in .question and ansewr

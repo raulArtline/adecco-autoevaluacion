@@ -13,7 +13,7 @@
 }
 
 .btn-rounded {
-    @apply rounded-full w-10 h-10 bg-verde-adecco text-white flex items-center justify-center cursor-pointer border border-verde-adecco hover:bg-white hover:text-verde-adecco transition-all;
+    @apply rounded-lg text-lg bg-verde-adecco text-white flex items-center justify-center cursor-pointer border border-verde-adecco hover:bg-white hover:text-verde-adecco transition-all;
 }
 .btn-rounded.disabled {
     @apply cursor-default bg-transparent text-[#8987A1]  border-[#8987A1];
