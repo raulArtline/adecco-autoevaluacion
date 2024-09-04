@@ -32,9 +32,10 @@
     </div>
     {{-- video --}}
     <div class="w-7/12">
-      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/t_opaRwRaeI?si=gsoJAjadkZC4kzYZ" title="YouTube video player" frameborder="0"
+      <lite-youtube videoid="t_opaRwRaeI"></lite-youtube>
+      {{-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/t_opaRwRaeI?si=gsoJAjadkZC4kzYZ" title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen></iframe>
+        allowfullscreen></iframe> --}}
     </div>
 
   </div>

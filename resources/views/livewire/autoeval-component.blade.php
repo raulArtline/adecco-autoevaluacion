@@ -111,7 +111,7 @@
         const debug = true; //true para desbloquer el avance y ver console.log
 
         initSurvey();
-        irPage(7)
+        // irPage(7)
 
         debug && console.log("livewire:initialized");
         debug && console.log('component data', component.data);
@@ -127,16 +127,19 @@
 
         })
 
+        function sendData() {
+          component.set('data', dataAswers, false);
+          component.saveResults().then((res) => {
+            debug && console.log(res)
+          });
+        }
+
         function initSurvey() {
           // add ids in .question and ansewr
           $$('.question').forEach((question, index) => {
             question.setAttribute('id', `pregunta-${index + 1}`);
             totalQuestionsHTML++;
           })
-          // $$('.answer').forEach((answer, index) => {
-          //   answer.setAttribute('id', `answer-${index + 1}`);
-          // })
-
           //añadir class required a las .questions a partir de la pagina 3
           $$('.pag').forEach((pag, index) => {
             // mayor que 1 porque el index comienza en 0 y son obligatorias a partir de pag 3
@@ -194,6 +197,7 @@
             $('#resumen').classList.remove('hidden');
 
             checkInputsLevels();
+            sendData(); //eviamos los datos a BBDD
           }
         });
         btnPrev.addEventListener('click', () => {
