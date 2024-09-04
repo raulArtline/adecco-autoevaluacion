@@ -28,7 +28,7 @@ class AutoevalComponent extends Component
         $this->survey->update(['results' => json_encode($this->data)]);
 
         // Evitar que el componente se re-renderice
-        // $this->skipRender();
+        $this->skipRender();
 
         // return json con susscess = true y un msg
         return response()->json(['success' => true, 'msg' => 'Encuesta guardada con exito']);
