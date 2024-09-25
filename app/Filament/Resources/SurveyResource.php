@@ -52,26 +52,26 @@ class SurveyResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('uuid')
-                    ->label("Identificador")
-                    ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('client')
                     ->label('Cliente')
                     ->searchable(),
+                Tables\Columns\TextColumn::make('uuid')
+                    ->label("Identificador")
+                    ->toggleable(isToggledHiddenByDefault: false),
                 // Tables\Columns\TextColumn::make('question.name')
                 //     ->label('Preguntas')
                 //     ->numeric(),
-                Tables\Columns\TextColumn::make('question.list_questions')
-                    ->label('Lista de preguntas')
-                    ->toggleable(isToggledHiddenByDefault: false),
-                Tables\Columns\TextColumn::make('results')
-                    ->label('Resultados')
-                    ->toggleable(isToggledHiddenByDefault: true),
+                // Tables\Columns\TextColumn::make('question.list_questions')
+                //     ->label('Lista de preguntas')
+                //     ->toggleable(isToggledHiddenByDefault: false),
+                // Tables\Columns\TextColumn::make('results')
+                //     ->label('Resultados')
+                //     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('created_at')
                     ->label('Creado')
                     ->dateTime()
                     ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                    ->toggleable(isToggledHiddenByDefault: false),
                 Tables\Columns\TextColumn::make('updated_at')
                     ->label('Actualizado')
                     ->dateTime()
@@ -151,7 +151,7 @@ class SurveyResource extends Resource
     }
 
 
-    // custom funcion para exportar los resultados
+    // custom funtion to export results to csv
     public static function exportResults()
     {
         // Recupera todas las encuestas
