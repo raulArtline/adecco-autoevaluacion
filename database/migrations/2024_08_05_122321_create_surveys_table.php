@@ -16,12 +16,12 @@ return new class extends Migration
             $table->uuid('uuid')->unique();
             $table->string('client');
             // foreing key question id model question
-            $table->unsignedBigInteger('question_id');
+            $table->unsignedBigInteger('question_id')->nullable();
             $table->text('results')->nullable();
             $table->timestamps();
 
             $table->foreign('question_id')
-                ->references('id')->on('questions');
+                ->references('id')->on('questions')->onDelete('set null');
         });
     }
 
