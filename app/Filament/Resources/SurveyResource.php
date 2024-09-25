@@ -90,10 +90,10 @@ class SurveyResource extends Resource
                     ->copyable(function ($record) {
                         return config('app.url') . '/' . $record->uuid;
                     }),
+                Tables\Actions\ViewAction::make()->iconButton(),
                 Tables\Actions\EditAction::make(),
                 // ->successRedirectUrl(route('surveys.list')),
-                Tables\Actions\ViewAction::make()->iconButton(),
-                // Tables\Actions\DeleteAction::make(),
+                Tables\Actions\DeleteAction::make(),
             ])
             ->headerActions([
                 Tables\Actions\Action::make('export')
