@@ -33,7 +33,7 @@
         </div>
 
         {{-- contendido de la autevaluacion --}}
-        <section class="content-eval min-h-96 hidden w-full rounded-3xl bg-white mt-10 py-10 px-16 shadow-xl">
+        <section class="content-eval min-h-96 hidden w-full rounded-3xl bg-white mt-10 py-10 px-8 lg:px-16 shadow-xl">
           <x-autoevaluacion.bloque1 id="block-1" />
           <x-autoevaluacion.bloque2 id="block-2" class="pag hidden" />
           <x-autoevaluacion.bloque3 id="block-3" class="pag hidden" />
@@ -111,7 +111,7 @@
         const debug = true; //true para desbloquer el avance y ver console.log
 
         initSurvey();
-        irPage(2)
+        irPage(4)
 
         debug && console.log("livewire:initialized");
         debug && console.log('component data', component.data);
@@ -309,7 +309,9 @@
             // si es un textarea
             let textarea = question.querySelector('textarea');
             if (textarea) {
-              dataAswers['reflexion-video'] = textarea.value;
+              if (currentPage === 3) dataAswers['reflexion-video'] = textarea.value;
+              if (currentPage === 4) dataAswers['reflexion-DE&I'] = textarea.value;
+
             }
 
             // Si es un radio

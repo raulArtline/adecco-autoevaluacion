@@ -17,7 +17,7 @@
     <h4 class="font-semibold">(Siendo 0= Ninguna sensibilidad | 5= Algo de sensibilidad | 10= Mucha sensibilidad)
     </h4>
 
-    <x-autoevaluacion.custom-range pretext="Ninguna sensibilidad" postext="Mucha sensibilidad" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="Ninguna sensibilidad" postext="Mucha sensibilidad" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   <!--  -->
   <div class="question text-center">
@@ -27,7 +27,7 @@
     </h4>
     <h4 class="font-semibold">(Siendo 0= Ningún contacto | 5= Algo de contacto | 10= Mucho contacto)</h4>
 
-    <x-autoevaluacion.custom-range pretext="Ningún contacto" postext="Mucho contacto" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="Ningún contacto" postext="Mucho contacto" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   <!--  -->
   <div class="question text-center">
@@ -38,7 +38,7 @@
     <h4 class="font-semibold">(Siendo 0= Ninguna sensibilidad | 5= Algo de sensibilidad | 10= Mucha sensibilidad)
     </h4>
 
-    <x-autoevaluacion.custom-range pretext="Ninguna sensibilidad" postext="Mucha sensibilidad" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="Ninguna sensibilidad" postext="Mucha sensibilidad" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   <!--  -->
   <div class="question text-center">
@@ -48,7 +48,7 @@
     </h4>
     <h4 class="font-semibold">(Siendo 0= Ningún contacto | 5= Algo de contacto | 10= Mucho contacto)</h4>
 
-    <x-autoevaluacion.custom-range pretext="Ningún contacto" postext="Mucho contacto" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="Ningún contacto" postext="Mucho contacto" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   <!--  -->
   <div class="question text-center">
@@ -59,7 +59,7 @@
     <h4 class="font-semibold">(Siendo 0= Ninguna sensibilidad | 5= Algo de sensibilidad | 10= Mucha sensibilidad)
     </h4>
 
-    <x-autoevaluacion.custom-range pretext="Ninguna sensibilidad" postext="Mucha sensibilidad" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="Ninguna sensibilidad" postext="Mucha sensibilidad" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   <!--  -->
   <div class="question text-center">
@@ -69,7 +69,7 @@
     </h4>
     <h4 class="font-semibold">(Siendo 0= Ningún contacto | 5= Algo de contacto | 10= Mucho contacto)</h4>
 
-    <x-autoevaluacion.custom-range pretext="Ningún contacto" postext="Mucho contacto" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="Ningún contacto" postext="Mucho contacto" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   <!--  -->
   <div class="question text-center">
@@ -80,7 +80,7 @@
     <h4 class="font-semibold">(Siendo 0= Ninguna sensibilidad | 5= Algo de sensibilidad | 10= Mucha sensibilidad)
     </h4>
 
-    <x-autoevaluacion.custom-range pretext="Ninguna sensibilidad" postext="Mucha sensibilidad" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="Ninguna sensibilidad" postext="Mucha sensibilidad" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   <!--  -->
   <div class="question text-center">
@@ -90,7 +90,7 @@
     </h4>
     <h4 class="font-semibold">(Siendo 0= Ningún contacto | 5= Algo de contacto | 10= Mucho contacto)</h4>
 
-    <x-autoevaluacion.custom-range pretext="Ningún contacto" postext="Mucho contacto" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="Ningún contacto" postext="Mucho contacto" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   <!--  -->
   <div class="question text-center">
@@ -101,7 +101,7 @@
     <h4 class="font-semibold">(Siendo 0= Ninguna sensibilidad | 5= Algo de sensibilidad | 10= Mucha sensibilidad)
     </h4>
 
-    <x-autoevaluacion.custom-range pretext="Ninguna sensibilidad" postext="Mucha sensibilidad" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="Ninguna sensibilidad" postext="Mucha sensibilidad" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   <!--  -->
   <div class="question text-center">
@@ -111,7 +111,7 @@
     </h4>
     <h4 class="font-semibold">(Siendo 0= Ningún contacto | 5= Algo de contacto | 10= Mucho contacto)</h4>
 
-    <x-autoevaluacion.custom-range pretext="Ningún contacto" postext="Mucho contacto" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="Ningún contacto" postext="Mucho contacto" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   <!--  -->
 

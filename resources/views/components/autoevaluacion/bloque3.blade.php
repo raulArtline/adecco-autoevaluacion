@@ -26,7 +26,19 @@
       Inclusión?(*)
     </h4>
 
-    <x-autoevaluacion.custom-range pretext="Ningún compromiso" postext="Muy comprometido/a" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range-2 pretext="Ningún compromiso" postext="Muy comprometido/a" class="answer" />
+  </div>
+
+  <div class="mt-5">
+    <p><strong>Activista:</strong> Personas que demuestran un compromiso profundo con DE&I, participan activamente en iniciativas relacionadas y suelen ser líderes de opinión en
+      este
+      ámbito.</p>
+    <p><strong>Champion de DE&I:</strong> personas que son fuertes defensoras de DE&I, buscan oportunidades para aprender y crecer en este tema, y suelen influir en sus pares.</p>
+    <p><strong>Aliado/a:</strong> personas que apoyan los principios de DE&I y están dispuestos a participar en actividades relacionadas cuando se les presenta la oportunidad.</p>
+    <p><strong>Neutral:</strong> quienes reconocen la importancia de DE&I, pero que no han dedicado un esfuerzo significativo a aprender o actuar en este ámbito.</p>
+    <p><strong>Indiferente: </strong>personas que tienen poco interés en los temas de DE&I y que pueden incluso mostrar cierta resistencia a estos conceptos.</p>
+    <p><strong>Opositor:</strong> aquellas personas que expresan opiniones contrarias a la DE&I y que pueden activamente trabajar en contra de estos principios.</p>
+
   </div>
 
 </article>

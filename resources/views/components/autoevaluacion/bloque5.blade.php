@@ -20,7 +20,7 @@
       edad,
       formación académica o aficiones contigo.</h4>
 
-    <x-autoevaluacion.custom-range pretext="No me influye nada" postext="Me influye mucho" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="No me influye nada" postext="Me influye mucho" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   <!--  -->
   <div class="question text-center">
@@ -31,7 +31,7 @@
       por encajar en un grupo, aceptando lo que diga la mayoría, en lugar de realizar su propio juicio o
       pensamiento.</h4>
 
-    <x-autoevaluacion.custom-range pretext="No me influye nada" postext="Me influye mucho" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="No me influye nada" postext="Me influye mucho" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   <!--  -->
   <div class="question text-center">
@@ -42,7 +42,7 @@
       cualidades serán buenas. Por ejemplo, basarnos en el hecho de que una persona tenga buena apariencia nos
       condiciona a pensar que tiene grandes cualidades o competencias.</h4>
 
-    <x-autoevaluacion.custom-range pretext="No me influye nada" postext="Me influye mucho" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="No me influye nada" postext="Me influye mucho" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   <!--  -->
   <div class="question text-center">
@@ -53,7 +53,7 @@
       persona sea influenciada por un solo rasgo negativo. Por ejemplo, poner el foco en la discapacidad de una
       persona sin ser capaces de ver su talento.</h4>
 
-    <x-autoevaluacion.custom-range pretext="No me influye nada" postext="Me influye mucho" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="No me influye nada" postext="Me influye mucho" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   <!--  -->
   <div class="question text-center">
@@ -63,7 +63,7 @@
     <h4 class="text-xl">Tendencia a valorar aquellas creencias, ideas o hipótesis que confirman las nuestras propias
       percepciones iniciales, omitiendo o restando valor a puntos de vista que evidencien lo contrario.</h4>
 
-    <x-autoevaluacion.custom-range pretext="No me influye nada" postext="Me influye mucho" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="No me influye nada" postext="Me influye mucho" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   <!--  -->
   <div class="question text-center">
@@ -74,7 +74,7 @@
       creencias, valores o posturas a las nuestras y emitimos nuestras reflexiones o posturas como si fueran
       únicas y evidentes.</h4>
 
-    <x-autoevaluacion.custom-range pretext="No me influye nada" postext="Me influye mucho" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="No me influye nada" postext="Me influye mucho" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   <!--  -->
   <div class="question text-center">
@@ -86,7 +86,7 @@
       control. Sin embargo, los éxitos de las demás personas son resultado de la suerte y sus fracasos se producen
       por falta de capacidad.</h4>
 
-    <x-autoevaluacion.custom-range pretext="No me influye nada" postext="Me influye mucho" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="No me influye nada" postext="Me influye mucho" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   <!--  -->
   <div class="question text-center">
@@ -96,7 +96,7 @@
     <h4 class="text-xl">Tendencia a discriminar de manera inconsciente en procesos de selección o en procesos de
       promoción a personas que se diferencian del grupo dominante.</h4>
 
-    <x-autoevaluacion.custom-range pretext="No me influye nada" postext="Me influye mucho" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="No me influye nada" postext="Me influye mucho" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   <!--  -->
   <div class="question text-center">
@@ -107,7 +107,7 @@
       grupos, dificultándonos emitir juicios objetivos sobre las personas que forman esos grupos de manera
       individual. Por ejemplo, pensar que las personas senior no son creativas.</h4>
 
-    <x-autoevaluacion.custom-range pretext="No me influye nada" postext="Me influye mucho" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="No me influye nada" postext="Me influye mucho" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   <!--  -->
   <div class="question text-center">
@@ -118,7 +118,7 @@
       tendemos a no darnos cuenta de nuestros propios sesgos cognitivos y de vernos como menos sesgados que los
       demás.</h4>
 
-    <x-autoevaluacion.custom-range pretext="No me influye nada" postext="Me influye mucho" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="No me influye nada" postext="Me influye mucho" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   <!--  -->
 

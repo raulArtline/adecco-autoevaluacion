@@ -13,7 +13,7 @@
     </h4>
     <h4 class="font-semibold">(0 Lo desconozco | 5 Algunas letras sí | 10 Perfectamente)</h4>
 
-    <x-autoevaluacion.custom-range pretext="Lo desconozco" postext="Perfectamente" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="Lo desconozco" postext="Perfectamente" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   {{--  --}}
   <div class="question mt-28 text-center">
@@ -24,7 +24,7 @@
     </h4>
     <h4 class="font-semibold">(0 Lo desconozco | 5 Algunas letras sí | 10 Perfectamente)</h4>
 
-    <x-autoevaluacion.custom-range pretext="Lo desconozco" postext="Perfectamente" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="Lo desconozco" postext="Perfectamente" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   {{--  --}}
   <div class="question mt-28 text-center">
@@ -34,7 +34,7 @@
     </h4>
     <h4 class="font-semibold">(0 Lo desconozco | 5 Algunas letras sí | 10 Perfectamente)</h4>
 
-    <x-autoevaluacion.custom-range pretext="Lo desconozco" postext="Perfectamente" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="Lo desconozco" postext="Perfectamente" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   {{--  --}}
   <div class="question mt-28 text-center">
@@ -46,7 +46,7 @@
     </h4>
     <h4 class="font-semibold">(0 Lo desconozco | 5 Algunas letras sí | 10 Perfectamente)</h4>
 
-    <x-autoevaluacion.custom-range pretext="Lo desconozco" postext="Perfectamente" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="Lo desconozco" postext="Perfectamente" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   {{--  --}}
   <div class="question mt-28 text-center">
@@ -55,7 +55,7 @@
     </h4>
     <h4 class="font-semibold">(0 Lo desconozco | 5 Algunas letras sí | 10 Perfectamente)</h4>
 
-    <x-autoevaluacion.custom-range pretext="Lo desconozco" postext="Perfectamente" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="Lo desconozco" postext="Perfectamente" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   {{--  --}}
   <div class="question mt-28 text-center">
@@ -67,7 +67,7 @@
     </h4>
     <h4 class="font-semibold">(0 Lo desconozco | 5 Algunas letras sí | 10 Perfectamente)</h4>
 
-    <x-autoevaluacion.custom-range pretext="Lo desconozco" postext="Perfectamente" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="Lo desconozco" postext="Perfectamente" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   {{--  --}}
   <div class="question mt-28 text-center">
@@ -79,7 +79,7 @@
     </h4>
     <h4 class="font-semibold">(0 Lo desconozco | 5 Algunas letras sí | 10 Perfectamente)</h4>
 
-    <x-autoevaluacion.custom-range pretext="Lo desconozco" postext="Perfectamente" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="Lo desconozco" postext="Perfectamente" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   {{--  --}}
   <div class="question mt-28 text-center">
@@ -90,7 +90,7 @@
     </h4>
     <h4 class="font-semibold">(0 Lo desconozco | 5 Algunas letras sí | 10 Perfectamente)</h4>
 
-    <x-autoevaluacion.custom-range pretext="Lo desconozco" postext="Perfectamente" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="Lo desconozco" postext="Perfectamente" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   {{--  --}}
   <div class="question mt-28 text-center">
@@ -100,7 +100,7 @@
     </h4>
     <h4 class="font-semibold">(0 Lo desconozco | 5 Algunas letras sí | 10 Perfectamente)</h4>
 
-    <x-autoevaluacion.custom-range pretext="Lo desconozco" postext="Perfectamente" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="Lo desconozco" postext="Perfectamente" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   {{--  --}}
   <div class="question mt-28 text-center">
@@ -110,7 +110,7 @@
     </h4>
     <h4 class="font-semibold">(0 Lo desconozco | 5 Algunas letras sí | 10 Perfectamente)</h4>
 
-    <x-autoevaluacion.custom-range pretext="Lo desconozco" postext="Perfectamente" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="Lo desconozco" postext="Perfectamente" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
   {{--  --}}
   <div class="question mt-28 text-center">
@@ -120,7 +120,7 @@
     </h4>
     <h4 class="font-semibold">(0 Lo desconozco | 5 Algunas letras sí | 10 Perfectamente)</h4>
 
-    <x-autoevaluacion.custom-range pretext="Lo desconozco" postext="Perfectamente" class="answer flex justify-between gap-2" />
+    <x-autoevaluacion.custom-range pretext="Lo desconozco" postext="Perfectamente" class="answer flex flex-wrap justify-center md:justify-between gap-2" />
   </div>
 
 </article>
