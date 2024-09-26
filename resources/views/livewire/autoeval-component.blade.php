@@ -40,6 +40,7 @@
           <x-autoevaluacion.bloque4 id="block-4" class="pag hidden" />
           <x-autoevaluacion.bloque5 id="block-5" class="pag hidden" />
           <x-autoevaluacion.bloque6 id="block-6" class="pag hidden" />
+          <x-autoevaluacion.bloque7 id="block-7" class="pag hidden" />
           <x-autoevaluacion.navegacion />
           <button id="enviar" class="btn btn-primary hidden">Enviar datos</button>
         </section>
@@ -105,7 +106,7 @@
         // debug && console.log(dataAswers);
         let totalQuestionsHTML = 0;
         //paginacion
-        const totalPage = 6;
+        const totalPage = 7;
         let currentPage = 1;
         const btnNext = $('#btn-next');
         const btnPrev = $('#btn-prev');
@@ -113,7 +114,7 @@
         const debug = true; //true para desbloquer el avance y ver console.log
 
         initSurvey();
-        irPage(4)
+        irPage(7)
 
         debug && console.log("livewire:initialized");
         debug && console.log('component data', component.data);
