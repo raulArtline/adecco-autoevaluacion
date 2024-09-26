@@ -29,6 +29,13 @@
         </div>
       </div>
 
+      <div class="question mt-5">
+        <p>
+          Viendo el video, <strong>¿te gustaría hacer algún comentario o reflexión?</strong>
+        </p>
+        <textarea class="textarea textarea-bordered mt-5 w-full" placeholder="Escribe tu respuesta aquí"></textarea>
+      </div>
+
     </div>
     {{-- video --}}
     <div class="w-7/12">

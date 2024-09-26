@@ -108,10 +108,10 @@
         const btnNext = $('#btn-next');
         const btnPrev = $('#btn-prev');
 
-        const debug = false; //true para desbloquer el avance y ver console.log
+        const debug = true; //true para desbloquer el avance y ver console.log
 
         initSurvey();
-        // irPage(7)
+        irPage(2)
 
         debug && console.log("livewire:initialized");
         debug && console.log('component data', component.data);
@@ -306,6 +306,12 @@
               dataAswers[answerKey] = select.options[select.selectedIndex].text;
             }
 
+            // si es un textarea
+            let textarea = question.querySelector('textarea');
+            if (textarea) {
+              dataAswers['reflexion-video'] = textarea.value;
+            }
+
             // Si es un radio
             let radioInputs = question.querySelectorAll('input[type="radio"]');
             if (radioInputs.length > 0) {
@@ -329,7 +335,7 @@
             }
 
           })
-          //   debug && console.log(dataAswers)
+          debug && console.log(dataAswers)
           //   debug && console.log("🚀 ~ nkowledgeLevel:", nkowledgeLevel)
           //   debug && console.log("🚀 ~ sesgoLevel:", sesgoLevel)
 

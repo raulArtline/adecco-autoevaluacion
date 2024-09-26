@@ -12,7 +12,7 @@
     <div class="form-control ">
       <div class="question">
         <div class="label">
-          <span class="font-lust"><span class="p-number">1. </span>Nombre</span>
+          <span class="font-lust"><span class="p-number">1. </span>País</span>
         </div>
         <x-autoevaluacion.custom-input type="text" placeholder="Escribe tu respuesta" class="answer input input-bordered text-lg focus-verde w-full" />
       </div>
