@@ -59,7 +59,6 @@
 
         // Runs immediately after Livewire has finished initializing
         // on the page...
-
         let survey = @json($survey);
         const {
           client,
@@ -98,8 +97,11 @@
         // };
 
         // En las paginas 4 y 5 hay dos sumatorias que dan un nivel según las respuestas del usuario, lo almacenamos en estas variables
+        let compromisoLevel = 0;
         let nkowledgeLevel = 0;
         let sesgoLevel = 0;
+        let sensibilidadLevel = 0;
+        let contactoLevel = 0;
         // debug && console.log(dataAswers);
         let totalQuestionsHTML = 0;
         //paginacion
@@ -167,11 +169,27 @@
             // debug && console.log("🚀 ~ answer.addEventListener ~ target:", target)
             // buscamos el padre de este elemento
             const questionParent = target.closest('.question');
+
             // remove clase .required
             questionParent.classList.remove('required');
             // remove clase .selected de .number de esta pregunta
             questionParent.querySelectorAll('.number').forEach(number => number.classList.remove('selected'));
             target.classList.add('selected');
+
+            // New, si en pregunta 6, se pulsa en la 1,2,3 mostramos un texarea
+            questionParent.querySelectorAll('.number').forEach(number => {
+              if (number.classList.contains('selected')) {
+                if (number.dataset.id === '1' || number.dataset.id === '2' || number.dataset.id === '3') {
+                  //   console.log(questionParent);
+                  $('.question-hidden').classList.remove('hidden');
+                  $('.question-hidden').closest('.question').classList.remove('required');
+                } else {
+                  $('.question-hidden').classList.add('hidden');
+                  //   borrar value text area
+                  $('.question-hidden').querySelector('textarea').value = '';
+                }
+              }
+            })
 
             checkObligatory(); //comprueba obligatorios
           });
@@ -309,8 +327,9 @@
             // si es un textarea
             let textarea = question.querySelector('textarea');
             if (textarea) {
-              if (currentPage === 3) dataAswers['reflexion-video'] = textarea.value;
-              if (currentPage === 4) dataAswers['reflexion-DE&I'] = textarea.value;
+              console.log(currentPage);
+              if (currentPage === 2) dataAswers['respuesta-abierta-video'] = textarea.value;
+              if (currentPage === 3) dataAswers['rrespuesta-abierta-compromiso'] = textarea.value;
 
             }
 

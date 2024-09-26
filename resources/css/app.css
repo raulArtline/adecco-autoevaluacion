@@ -84,5 +84,5 @@ body {
 }
 
 .number.word {
-    @apply w-full h-12 px-5 leading-tight;
+    @apply w-auto h-12 px-5 leading-tight;
 }
