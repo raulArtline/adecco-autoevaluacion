@@ -114,7 +114,7 @@
         const debug = true; //true para desbloquer el avance y ver console.log
 
         initSurvey();
-        irPage(7)
+        irPage(8)
 
         debug && console.log("livewire:initialized");
         debug && console.log('component data', component.data);
