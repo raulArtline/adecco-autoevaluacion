@@ -1,4 +1,4 @@
-<article class="[&_h5]:font-lust [&_h5]:text-xl [&_h5]:my-4">
+<article {{ $attributes->merge(['class' => '[&_h5]:font-lust [&_h5]:text-xl [&_h5]:my-4 [&_ul]:list-disc [&_ul]:pl-8']) }}>
   <h3 class="text-3xl font-bold">Sensibilidad</h3>
   <div class="feed-1 feed">
     <div class="[&>p]:text-xl [&>ul]:text-xl">
