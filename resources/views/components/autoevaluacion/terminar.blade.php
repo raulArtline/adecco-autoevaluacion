@@ -12,7 +12,6 @@
     <x-autoevaluacion.resumen.sesgo class="sesgo" />
     <x-autoevaluacion.resumen.sensibilidad class="sensibilidad" />
     <x-autoevaluacion.resumen.contacto class="contacto" />
-
   </div>
 
 
