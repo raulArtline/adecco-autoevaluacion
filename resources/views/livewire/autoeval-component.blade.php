@@ -68,6 +68,154 @@
 
         let component = @this;
         let dataAswers = {};
+
+        let resultLevels = [{
+            label: 'Compromiso',
+            levels: [{
+                id: 1,
+                text: 'Opositor'
+              },
+              {
+                id: 2,
+                text: 'Indiferente'
+              },
+              {
+                id: 3,
+                text: 'Neutral'
+              },
+              {
+                id: 4,
+                text: 'Aliado/a'
+              },
+              {
+                id: 5,
+                text: 'Champion de DE&I'
+              },
+              {
+                id: 6,
+                text: 'Activista'
+              }
+            ]
+          },
+          {
+            label: 'Conocimiento',
+            levels: [{
+                id: 1,
+                text: 'Desinterés o desconocimiento',
+                min: 0,
+                max: 20
+              },
+              {
+                id: 2,
+                text: 'Iniciación',
+                min: 21,
+                max: 40
+              },
+              {
+                id: 3,
+                text: 'Madurez',
+                min: 41,
+                max: 80
+              },
+              {
+                id: 4,
+                text: 'Líder con propósito',
+                min: 81,
+                max: 100
+              },
+              {
+                id: 5,
+                text: 'Nivel de conocimiento suficiente para ser líder inclusivo/a',
+                min: 101,
+                max: 110
+              }
+            ]
+          },
+          {
+            label: 'Sesgo',
+            levels: [{
+                id: 1,
+                text: 'Inconsciencia',
+                min: 0,
+                max: 30
+              },
+              {
+                id: 2,
+                text: 'Consciente de la inconsciencia',
+                min: 31,
+                max: 60
+              },
+              {
+                id: 3,
+                text: 'Gran nivel de consciencia',
+                min: 61,
+                max: 90
+              },
+              {
+                id: 4,
+                text: 'Cuidado con el Metasesgo',
+                min: 91,
+                max: 100
+              }
+            ]
+          },
+          {
+            label: 'Sensibilidad',
+            levels: [{
+                id: 1,
+                text: 'Baja sensibilidad',
+                min: 0,
+                max: 35
+              },
+              {
+                id: 2,
+                text: 'Sensibilidad moderada',
+                min: 36,
+                max: 70
+              },
+              {
+                id: 3,
+                text: 'Alta sensibilidad',
+                min: 71,
+                max: 105
+              },
+              {
+                id: 4,
+                text: 'Muy alta sensibilidad',
+                min: 106,
+                max: 140
+              }
+            ]
+          },
+          {
+            label: 'Contacto',
+            levels: [{
+                id: 1,
+                text: 'Ningún contacto o muy poco contacto',
+                min: 0,
+                max: 30
+              },
+              {
+                id: 2,
+                text: 'Contacto ocasional',
+                min: 31,
+                max: 60
+              },
+              {
+                id: 3,
+                text: 'Contacto habitual',
+                min: 61,
+                max: 90
+              },
+              {
+                id: 4,
+                text: 'Mucho contacto',
+                min: 91,
+                max: 120
+              }
+            ]
+          }
+        ];
         // let dataAswers = {
         //   "question-1": "RAul",
         //   "question-2": "45-54 años",
@@ -114,7 +262,8 @@
         const debug = true; //true para desbloquer el avance y ver console.log
 
         initSurvey();
-        irPage(8)
+        irPage(8);
+        // showFeedbacksLevels();
 
         debug && console.log("livewire:initialized");
         debug && console.log('component data', component.data);
@@ -186,8 +335,7 @@
                   $('.question-hidden').closest('.question').classList.remove('required');
                 } else {
                   $('.question-hidden').classList.add('hidden');
-                  //   borrar value text area
-                  $('.question-hidden').querySelector('textarea').value = '';
+                  $('.question-hidden').querySelector('textarea').value = ''; //   borrar value text area
                 }
               }
             })
@@ -215,7 +363,7 @@
             $('.content-eval').classList.add('hidden');
             $('#resumen').classList.remove('hidden');
 
-            checkInputsLevels();
+            showFeedLevels();
             sendData(); //eviamos los datos a BBDD
           }
         });
@@ -275,38 +423,87 @@
           debug && console.log("No hay preguntas obligatorias.");
         }
 
-        function checkInputsLevels() {
-          let inputSesgoSelect;
-          let inputNkowledgeSelect;
+        function showFeedLevels() {
+          debug && console.log("🚀 ~ showfeedbackslevels :")
 
-          // nkowledgeLevel = 70;
-          // sesgoLevel = 100;
+          // for debug
+          compromisoLevel = 2;
+          nkowledgeLevel = 70;
+          sesgoLevel = 50;
+          sensibilidadLevel = 100;
+          contactoLevel = 30;
 
-          if (nkowledgeLevel <= 20) inputNkowledgeSelect = 1;
-          else if (nkowledgeLevel <= 40) inputNkowledgeSelect = 2;
-          else if (nkowledgeLevel <= 80) inputNkowledgeSelect = 3;
-          else if (nkowledgeLevel <= 100) inputNkowledgeSelect = 4;
-          else inputNkowledgeSelect = 5;
 
-          // Seleccionar el input con el valor de data-knowledge correspondiente y marcarlo como checked
-          const inputKnowledge = document.querySelector(`input[data-knowledge="${inputNkowledgeSelect}"]`);
-          if (inputKnowledge) inputKnowledge.checked = true;
+          let compromisoResult = resultLevels
+            .find((category) => category.label === 'Compromiso')
+            .levels.find((level) => level.id === compromisoLevel);
+          let conocimientoResult = getLevelInfo('Conocimiento', nkowledgeLevel);
+          let sesgoResult = getLevelInfo('Sesgo', sesgoLevel);
+          let sensibilidadResult = getLevelInfo('Sensibilidad', sensibilidadLevel);
+          let contactoResult = getLevelInfo('Contacto', contactoLevel);
 
-          if (sesgoLevel <= 30) inputSesgoSelect = 1;
-          else if (sesgoLevel <= 60) inputSesgoSelect = 2;
-          else if (sesgoLevel <= 90) inputSesgoSelect = 3;
-          else inputSesgoSelect = 4;
+          $('.compromiso').querySelector(`.feed-${compromisoResult.id}`).classList.add('visible');
+          $('.conocimiento').querySelector(`.feed-${conocimientoResult.id}`).classList.add('visible');
+          $('.sesgo').querySelector(`.feed-${sesgoResult.id}`).classList.add('visible');
+          $('.sensibilidad').querySelector(`.feed-${sensibilidadResult.id}`).classList.add('visible');
+          $('.contacto').querySelector(`.feed-${contactoResult.id}`).classList.add('visible');
 
-          // Seleccionar el input con el valor de data-sesgo correspondiente y marcarlo como checked
-          const inputSesgo = document.querySelector(`input[data-sesgo="${inputSesgoSelect}"]`);
-          if (inputSesgo) inputSesgo.checked = true;
+          console.log(compromisoResult);
+          console.log(conocimientoResult);
+          console.log(sesgoResult);
+          console.log(sensibilidadResult);
+          console.log(contactoResult);
         }
 
 
+        function showfeedbackslevels() {
+          debug && console.log("🚀 ~ showfeedbackslevels :")
+
+
+
+          // for debug
+          compromisoLevel = 2;
+          nkowledgeLevel = 70;
+          sesgoLevel = 50;
+          sensibilidadLevel = 100;
+          contactoLevel = 30;
+
+          let compromisoResult = resultLevels
+            .find((category) => category.label === 'Compromiso')
+            .levels.find((level) => level.id === compromisoLevel);
+          let conocimientoResult = getLevelInfo('Conocimiento', nkowledgeLevel);
+          let sesgoResult = getLevelInfo('Sesgo', sesgoLevel);
+          let sensibilidadResult = getLevelInfo('Sensibilidad', sensibilidadLevel);
+          let contactoResult = getLevelInfo('Contacto', contactoLevel);
+
+          console.log(compromisoResult);
+          console.log(conocimientoResult);
+          console.log(sesgoResult);
+          console.log(sensibilidadResult);
+          console.log(contactoResult);
+
+        }
+
+        function getLevelInfo(categoryLabel, value) {
+          const category = resultLevels.find(category => category.label === categoryLabel);
+
+          if (!category) return null;
+
+          const level = category.levels.find(level => value >= level.min && value <= level.max);
+
+          return level ? {
+            id: level.id,
+            text: level.text
+          } : null;
+        }
+
         function getDataPage() {
           //reset sumas
+          if (currentPage === 3) compromisoLevel = 0;
           if (currentPage === 4) nkowledgeLevel = 0;
           if (currentPage === 5) sesgoLevel = 0;
+          if (currentPage === 6) sensibilidadLevel = 0;
+          if (currentPage === 7) contactoLevel = 0;
 
           //si los answer de esa question son inputs o select guardamos el valor
           document.querySelectorAll(`#block-${currentPage} .question`).forEach((question, index) => {
@@ -328,7 +525,7 @@
             // si es un textarea
             let textarea = question.querySelector('textarea');
             if (textarea) {
-              console.log(currentPage);
+              //   console.log(currentPage);
               if (currentPage === 2) dataAswers['respuesta-abierta-video'] = textarea.value;
               if (currentPage === 3) dataAswers['rrespuesta-abierta-compromiso'] = textarea.value;
 
@@ -350,8 +547,11 @@
                 if (number.classList.contains('selected')) {
                   dataAswers[answerKey] = number.innerHTML;
                   //aprovechamos el bucle para hacer la sumatoria segun la pagina actual
+                  if (currentPage === 3) compromisoLevel = number.dataset.id;
                   if (currentPage === 4) nkowledgeLevel += parseInt(number.innerHTML);
                   if (currentPage === 5) sesgoLevel += parseInt(number.innerHTML);
+                  if (currentPage === 6) sensibilidadLevel += parseInt(number.innerHTML);
+                  if (currentPage === 7) contactoLevel += parseInt(number.innerHTML);
                 }
               });
             }
@@ -380,7 +580,8 @@
           if (currentPage > totalPage) {
             $('.content-eval').classList.add('hidden');
             $('#resumen').classList.remove('hidden');
-            checkInputsLevels();
+            showFeedLevels();
+
             return;
           }
           changePage();

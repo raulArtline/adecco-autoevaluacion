@@ -1,5 +1,5 @@
-<article {{ $attributes->merge(['class' => '[&_h5]:font-lust [&_h5]:text-xl [&_h5]:my-4 [&_ul]:list-disc [&_ul]:pl-8']) }}>
-  <h3 class="text-3xl font-bold">Compromiso</h3>
+<article {{ $attributes->merge(['class' => '[&_p]:text-xl']) }}>
+  <h3 class="text-3xl font-bold mb-4">Compromiso</h3>
   <div class="feed-1 feed">
     <p>Tienes un perfil <span class="level-compromiso font-bold">opositor</span>
       <br>

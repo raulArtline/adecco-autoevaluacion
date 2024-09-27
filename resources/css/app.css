@@ -87,5 +87,8 @@ body {
     @apply w-auto h-12 px-5 leading-tight;
 }
 .feed {
-    /* @apply hidden; */
+    @apply hidden;
+}
+.feed.visible {
+    @apply block;
 }

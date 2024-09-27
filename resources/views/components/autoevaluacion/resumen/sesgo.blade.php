@@ -1,7 +1,7 @@
-<article {{ $attributes->merge(['class' => '[&_h5]:font-lust [&_h5]:text-xl [&_h5]:my-4 [&_ul]:list-disc [&_ul]:pl-8']) }}>
+<article {{ $attributes->merge(['class' => '[&_h5]:font-lust [&_h5]:text-lg [&_h5]:my-4 [&_ul]:list-disc [&_ul]:pl-8 [&_p]:text-lg [&_ul]:text-lg']) }}>
   <h3 class="text-3xl font-bold">Sesgos</h3>
   <div class="feed-1 feed">
-    <div class="[&>p]:text-xl [&>ul]:text-xl">
+    <div>
       <h5><strong>0-30 Inconsciencia</strong> </h5>
       <p>Los sesgos inconscientes moldean tus pensamientos y decisiones más de lo que crees.
         Consejos:</p>
@@ -16,7 +16,7 @@
   </div>
   {{--  --}}
   <div class="feed-2 feed">
-    <div class="[&>p]:text-xl [&>ul]:text-xl">
+    <div>
       <h5><strong>30-60 Consciente de la inconsciencia.</strong> </h5>
       <p>Eres consciente de que tienes sesgos, pero aún te cuesta manejarlos. </p>
       <p class="font-bold my-2">Consejos:</p>
@@ -29,7 +29,7 @@
   </div>
   {{--  --}}
   <div class="feed-3 feed">
-    <div class="[&>p]:text-xl [&>ul]:text-xl">
+    <div>
       <h5><strong>60-90 Gran nivel de consciencia</strong> </h5>
       <p>Eres muy consciente de tus sesgos y estás trabajando activamente para reducir su impacto.</p>
       <p class="font-bold my-2">Consejos:</p>
@@ -42,7 +42,7 @@
   </div>
   {{--  --}}
   <div class="feed-4 feed">
-    <div class="[&>p]:text-xl [&>ul]:text-xl">
+    <div>
       <h5><strong>90-100 Cuidado con el Metasesgo. </strong> <br> Todas las personas tenemos sesgos cognitivos</h5>
       <p>¿Eres consciente de tus sesgos? Ten cuidado de no caer en la trampa de pensar que eres inmune a ellos.</p>
       <p class="font-bold my-2">Consejos:</p>

@@ -1,7 +1,7 @@
-<article {{ $attributes->merge(['class' => '[&_h5]:font-lust [&_h5]:text-xl [&_h5]:my-4 [&_ul]:list-disc [&_ul]:pl-8']) }}>
+<article {{ $attributes->merge(['class' => '[&_h5]:font-lust [&_h5]:text-lg [&_h5]:my-4 [&_ul]:list-disc [&_ul]:pl-8 [&_p]:text-lg [&_ul]:text-lg']) }}>
   <h3 class="text-3xl font-bold">Contacto</h3>
   <div class="feed-1 feed">
-    <div class="[&>p]:text-xl [&>ul]:text-xl">
+    <div>
       <h5><strong>0-30: Ningún contacto o muy poco contacto.</strong> </h5>
       <p>Comprendemos que hasta ahora tus interacciones con personas de diferentes realidades han sido limitadas. ¡Es un primer paso importante reconocerlo! Para ampliar tu
         perspectiva, te invitamos a explotar tu burbuja:</p>
@@ -17,7 +17,7 @@
   </div>
   {{--  --}}
   <div class="feed-2 feed">
-    <div class="[&>p]:text-xl [&>ul]:text-xl">
+    <div>
       <h5><strong>31-60: Contacto ocasional.</strong> </h5>
       <p>Tus experiencias de interacción son valiosas. Para profundizar tus relaciones y fomentar un ambiente más inclusivo, te sugerimos:</p>
       <p class="font-bold my-2">Consejos:</p>
@@ -32,7 +32,7 @@
   </div>
   {{--  --}}
   <div class="feed-3 feed">
-    <div class="[&>p]:text-xl [&>ul]:text-xl">
+    <div>
       <h5><strong>61- 90: Contacto habitual.</strong> </h5>
       <p>Tu compromiso con la inclusión es admirable. Para seguir creciendo en este camino, te proponemos:</p>
       <p class="font-bold my-2">Consejos:</p>
@@ -46,7 +46,7 @@
   </div>
   {{--  --}}
   <div class="feed-4 feed">
-    <div class="[&>p]:text-xl [&>ul]:text-xl">
+    <div>
       <h5><strong>91- 120: Mucho contacto.</strong></h5>
       <p>Tu alto nivel de interacción es un ejemplo a seguir. Para continuar siendo un agente de cambio, te invitamos a:</p>
       <p class="font-bold my-2">Consejos:</p>

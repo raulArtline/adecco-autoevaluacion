@@ -1,7 +1,7 @@
-<article {{ $attributes->merge(['class' => '[&_h5]:font-lust [&_h5]:text-xl [&_h5]:my-4 [&_ul]:list-disc [&_ul]:pl-8']) }}>
+<article {{ $attributes->merge(['class' => '[&_h5]:font-lust [&_h5]:text-lg [&_h5]:my-4 [&_ul]:list-disc [&_ul]:pl-8 [&_p]:text-lg [&_ul]:text-lg']) }}>
   <h3 class="text-3xl font-bold">Sensibilidad</h3>
   <div class="feed-1 feed">
-    <div class="[&>p]:text-xl [&>ul]:text-xl">
+    <div>
       <h5><strong>0-35: Baja sensibilidad.</strong> </h5>
       <p>Comprendemos que tu nivel de sensibilidad aún está en desarrollo. ¡Es un excelente punto de partida para crecer! Te invitamos a:</p>
       <p class="font-bold my-2">Consejos:</p>
@@ -19,7 +19,7 @@
   </div>
   {{--  --}}
   <div class="feed-2 feed">
-    <div class="[&>p]:text-xl [&>ul]:text-xl">
+    <div>
       <h5><strong>36-70: Sensibilidad moderada.</strong> </h5>
       <p>¡Estás empezando el camino correcto! Tu sensibilidad está creciendo poco a poco, pero aún hay espacio para profundizar.</p>
       <p class="font-bold my-2">Para seguir avanzando, te sugerimos:</p>
@@ -35,7 +35,7 @@
   </div>
   {{--  --}}
   <div class="feed-3 feed">
-    <div class="[&>p]:text-xl [&>ul]:text-xl">
+    <div>
       <h5><strong>71-105: Alta sensibilidad.</strong> </h5>
       <p>Tu alta sensibilidad es un gran valor para la sociedad. ¡Felicidades por tu compromiso! Para potenciar aún más tu impacto, te proponemos:</p>
       <p class="font-bold my-2">Consejos:</p>
@@ -50,7 +50,7 @@
   </div>
   {{--  --}}
   <div class="feed-4 feed">
-    <div class="[&>p]:text-xl [&>ul]:text-xl">
+    <div>
       <h5><strong>106-140: Muy alta sensibilidad.</strong></h5>
       <p>Tu compromiso con la diversidad y la inclusión es ejemplar. ¡Eres un verdadero agente de cambio! Para seguir inspirando a otros, te animamos a:</p>
       <p class="font-bold my-2">Consejos:</p>

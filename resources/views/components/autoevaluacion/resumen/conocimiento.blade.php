@@ -1,7 +1,7 @@
-<article {{ $attributes->merge(['class' => '[&_h5]:font-lust [&_h5]:text-xl [&_h5]:my-4 [&_ul]:list-disc [&_ul]:pl-8']) }}>
+<article {{ $attributes->merge(['class' => '[&_h5]:font-lust [&_h5]:text-lg [&_h5]:my-4 [&_ul]:list-disc [&_ul]:pl-8 [&_p]:text-lg [&_ul]:text-lg']) }}>
   <h3 class="text-3xl font-bold">Conocimiento</h3>
   <div class="feed-1 feed">
-    <div class="[&>p]:text-xl [&>ul]:text-xl">
+    <div>
       <h5><strong>0-20 Desinterés o desconocimiento</strong> <br>!Tienes que ponerte las pilas!</h5>
       <p>¡Es hora de despertar tu curiosidad! <br> La diversidad y la inclusión son temas clave en el mundo actual. Comienza por informarte sobre los 8 conceptos clave: unicidad,
         diversidad, igualdad, equidad, inclusión, unidad, pertenencia y justicia social. </p>
@@ -17,7 +17,7 @@
   </div>
   {{--  --}}
   <div class="feed-2 feed">
-    <div class="[&>p]:text-xl [&>ul]:text-xl">
+    <div>
       <h5><strong>20-40 Iniciación</strong> <br>¡Ánimo, estás empezando!</h5>
       <p>Estás empezando. La diversidad no son eslóganes o mensajes bonitos. Detrás de la DE&I hay psicología humana, sociología, antropología y muchas ciencias que explican cómo
         es el ser humano en sociedad, el valor y riqueza que tiene la diversidad humana y cómo aplicar este conocimiento a tus comportamientos y decisiones.</p>
@@ -33,7 +33,7 @@
   </div>
   {{--  --}}
   <div class="feed-3 feed">
-    <div class="[&>p]:text-xl [&>ul]:text-xl">
+    <div>
       <h5><strong>40-80 Madurez</strong> <br> Tienes buena base de conocimiento para seguir mejorando.</h5>
       <p>¡Estás en el camino correcto! Tienen un nivel de conocimiento maduro. Ahora, es momento de convertirte en un agente de cambio.</p>
       <p class="font-bold my-2">Consejos:</p>
@@ -47,7 +47,7 @@
   </div>
   {{--  --}}
   <div class="feed-4 feed">
-    <div class="[&>p]:text-xl [&>ul]:text-xl">
+    <div>
       <h5><strong>80-100 Líder con propósito.</strong> <br> Vemos que te motiva.</h5>
       <p>¡Eres un/a referente! <br>Tu compromiso es inspirador. Sigue así y motiva a otras personas.</p>
       <p class="font-bold my-2">Consejos:</p>
@@ -61,7 +61,7 @@
   </div>
   {{--  --}}
   <div class="feed-5 feed">
-    <div class="[&>p]:text-xl [&>ul]:text-xl">
+    <div>
       <h5><strong>100-110 Nivel de conocimiento suficiente para ser líder inclusivo/a.</strong> </h5>
       <p>¡Tu compromiso es ejemplar! <br>Continúa siendo un agente de cambio y un ejemplo a seguir.</p>
       <p class="font-bold my-2">Consejos:</p>
