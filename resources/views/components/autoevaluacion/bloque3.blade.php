@@ -44,7 +44,7 @@
     <p class="text-2xl font-bold text-verde-adecco">
       ¿Qué acciones o comportamientos concretos realizas que reflejen ese comportamiento?
     </p>
-    <textarea class="textarea textarea-bordered mt-3 w-full" placeholder="Escribe tu respuesta aquí"></textarea>
+    <textarea class="textarea textarea-bordered text-lg mt-3 w-full" placeholder="Escribe tu respuesta aquí"></textarea>
   </div>
 
 </article>

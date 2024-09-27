@@ -1,4 +1,4 @@
-<article {{ $attributes->merge(['class' => '[&_p]:text-xl']) }}>
+<section {{ $attributes->merge(['class' => '[&_p]:text-xl']) }}>
   <h3 class="text-3xl font-bold mb-4">Compromiso</h3>
   <div class="feed-1 feed">
     <p>Tienes un perfil <span class="level-compromiso font-bold">opositor</span>
@@ -41,4 +41,4 @@
 
 
 
-</article>
+</section>

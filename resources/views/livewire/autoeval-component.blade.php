@@ -216,34 +216,6 @@
             ]
           }
         ];
-        // let dataAswers = {
-        //   "question-1": "RAul",
-        //   "question-2": "45-54 años",
-        //   "question-3": "Masculino",
-        //   "question-4": "Quo sunt eu dicta co",
-        //   "question-5": "5 estrellas",
-        //   "question-6": "6",
-        //   "question-7": "3",
-        //   "question-8": "4",
-        //   "question-9": "4",
-        //   "question-10": "3",
-        //   "question-11": "3",
-        //   "question-12": "8",
-        //   "question-13": "8",
-        //   "question-14": "8",
-        //   "question-15": "8",
-        //   "question-16": "8",
-        //   "question-17": "8",
-        //   "question-18": "4",
-        //   "question-19": "4",
-        //   "question-20": "4",
-        //   "question-21": "4",
-        //   "question-23": "8",
-        //   "question-24": "7",
-        //   "question-25": "7",
-        //   "question-26": "7",
-        //   "question-27": "7",
-        // };
 
         // En las paginas 4 y 5 hay dos sumatorias que dan un nivel según las respuestas del usuario, lo almacenamos en estas variables
         let compromisoLevel = 0;
@@ -259,10 +231,10 @@
         const btnNext = $('#btn-next');
         const btnPrev = $('#btn-prev');
 
-        const debug = true; //true para desbloquer el avance y ver console.log
+        const debug = false; //true para desbloquer el avance y ver console.log
 
         initSurvey();
-        // irPage(8);
+        // irPage(7);
         // showFeedbacksLevels();
 
         debug && console.log("livewire:initialized");
@@ -337,6 +309,7 @@
                 } else {
                   $('.question-hidden').classList.add('hidden');
                   $('.question-hidden').querySelector('textarea').value = ''; //   borrar value text area
+                  $('.question-hidden').closest('.question').classList.remove('required');
                 }
               }
             })
@@ -347,12 +320,11 @@
 
         //   PAGINACION
         btnNext.addEventListener('click', () => {
+          // si btnNext is disabled no avances
+          if (btnNext.classList.contains('disabled')) return
+          getDataPage(); //tratar los datos que tenemos que recoger
 
           if (currentPage < totalPage) {
-            // si btnNext is disabled no avances
-            if (btnNext.classList.contains('disabled')) return
-
-            getDataPage(); //tratar los datos que tenemos que recoger
 
             currentPage++;
 
@@ -433,7 +405,13 @@
           //   sesgoLevel = 50;
           //   sensibilidadLevel = 100;
           //   contactoLevel = 30;
-
+          console.log({
+            compromisoLevel,
+            nkowledgeLevel,
+            sesgoLevel,
+            sensibilidadLevel,
+            contactoLevel,
+          });
 
           let compromisoResult = resultLevels
             .find((category) => category.label === 'Compromiso')
@@ -464,34 +442,6 @@
         }
 
 
-        function showfeedbackslevels() {
-          debug && console.log("🚀 ~ showfeedbackslevels :")
-
-
-
-          // for debug
-          compromisoLevel = 2;
-          nkowledgeLevel = 70;
-          sesgoLevel = 50;
-          sensibilidadLevel = 100;
-          contactoLevel = 30;
-
-          let compromisoResult = resultLevels
-            .find((category) => category.label === 'Compromiso')
-            .levels.find((level) => level.id === compromisoLevel);
-          let conocimientoResult = getLevelInfo('Conocimiento', nkowledgeLevel);
-          let sesgoResult = getLevelInfo('Sesgo', sesgoLevel);
-          let sensibilidadResult = getLevelInfo('Sensibilidad', sensibilidadLevel);
-          let contactoResult = getLevelInfo('Contacto', contactoLevel);
-
-          console.log(compromisoResult);
-          console.log(conocimientoResult);
-          console.log(sesgoResult);
-          console.log(sensibilidadResult);
-          console.log(contactoResult);
-
-        }
-
         function getLevelInfo(categoryLabel, value) {
           const category = resultLevels.find(category => category.label === categoryLabel);
 
@@ -506,6 +456,7 @@
         }
 
         function getDataPage() {
+          console.log("🚀 ~ getDataPage :")
           //reset sumas
           if (currentPage === 3) compromisoLevel = 0;
           if (currentPage === 4) nkowledgeLevel = 0;
@@ -535,8 +486,10 @@
             if (textarea) {
               //   console.log(currentPage);
               if (currentPage === 2) dataAswers['respuesta-abierta-video'] = textarea.value;
-              if (currentPage === 3) dataAswers['rrespuesta-abierta-compromiso'] = textarea.value;
-
+              if (currentPage === 3) dataAswers['respuesta-abierta-compromiso'] = textarea.value;
+            } else {
+              if (currentPage === 2) dataAswers['respuesta-abierta-video'] = '';
+              if (currentPage === 3) dataAswers['respuesta-abierta-compromiso'] = '';
             }
 
             // Si es un radio
@@ -555,7 +508,7 @@
                 if (number.classList.contains('selected')) {
                   dataAswers[answerKey] = number.innerHTML;
                   //aprovechamos el bucle para hacer la sumatoria segun la pagina actual
-                  if (currentPage === 3) compromisoLevel = number.dataset.id;
+                  if (currentPage === 3) compromisoLevel = parseInt(number.dataset.id);
                   if (currentPage === 4) nkowledgeLevel += parseInt(number.innerHTML);
                   if (currentPage === 5) sesgoLevel += parseInt(number.innerHTML);
                   if (currentPage === 6) sensibilidadLevel += parseInt(number.innerHTML);
@@ -570,6 +523,8 @@
           //   debug && console.log("🚀 ~ sesgoLevel:", sesgoLevel)
 
         }
+
+
 
         // Funcines para reducir la seleccion de items del DOM querySelectorAll/querySelector
         function $(selector) {

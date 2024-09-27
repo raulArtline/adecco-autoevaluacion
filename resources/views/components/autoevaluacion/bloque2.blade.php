@@ -33,7 +33,7 @@
         <p>
           Viendo el video, <strong>¿te gustaría hacer algún comentario o reflexión?</strong>
         </p>
-        <textarea class="textarea textarea-bordered mt-5 w-full" placeholder="Escribe tu respuesta aquí"></textarea>
+        <textarea class="textarea textarea-bordered mt-5 text-lg w-full" placeholder="Escribe tu respuesta aquí"></textarea>
       </div>
 
     </div>

@@ -1,4 +1,4 @@
-<article {{ $attributes->merge(['class' => '[&_h5]:font-lust [&_h5]:text-lg [&_h5]:my-4 [&_ul]:list-disc [&_ul]:pl-8 [&_p]:text-lg [&_ul]:text-lg']) }}>
+<section {{ $attributes->merge(['class' => '[&_h5]:font-lust [&_h5]:text-lg [&_h5]:my-4 [&_ul]:list-disc [&_ul]:pl-8 [&_p]:text-lg [&_ul]:text-lg']) }}>
   <h3 class="text-3xl font-bold">Contacto</h3>
   <div class="feed-1 feed">
     <div>
@@ -61,4 +61,4 @@
     </div>
   </div>
 
-</article>
+</section>
