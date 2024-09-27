@@ -16,8 +16,16 @@ class AutoevalComponent extends Component
 
     public function mount($id)
     {
+
+
         // recuperar la encuesta y obtener tambien los datos de la tabla asociada question
-        $this->survey = Survey::where('uuid', $id)->with('question')->first();
+        $survey = Survey::where('uuid', $id)->with('question')->first();
+        // Si la encuesta no se encuentra, redirigir a la página 404
+        if (!$survey) {
+            abort(404);
+        }
+
+        $this->survey = $survey;
     }
 
     public function saveResults()

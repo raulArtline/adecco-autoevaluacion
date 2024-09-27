@@ -262,7 +262,7 @@
         const debug = true; //true para desbloquer el avance y ver console.log
 
         initSurvey();
-        irPage(8);
+        // irPage(8);
         // showFeedbacksLevels();
 
         debug && console.log("livewire:initialized");
@@ -283,6 +283,7 @@
           component.set('data', dataAswers, false);
           component.saveResults().then((res) => {
             debug && console.log(res)
+            debug && console.log("🚀 ~ sendData ~ res:", dataAswers)
           });
         }
 
@@ -427,11 +428,11 @@
           debug && console.log("🚀 ~ showfeedbackslevels :")
 
           // for debug
-          compromisoLevel = 2;
-          nkowledgeLevel = 70;
-          sesgoLevel = 50;
-          sensibilidadLevel = 100;
-          contactoLevel = 30;
+          //   compromisoLevel = 2;
+          //   nkowledgeLevel = 70;
+          //   sesgoLevel = 50;
+          //   sensibilidadLevel = 100;
+          //   contactoLevel = 30;
 
 
           let compromisoResult = resultLevels
@@ -448,11 +449,18 @@
           $('.sensibilidad').querySelector(`.feed-${sensibilidadResult.id}`).classList.add('visible');
           $('.contacto').querySelector(`.feed-${contactoResult.id}`).classList.add('visible');
 
-          console.log(compromisoResult);
-          console.log(conocimientoResult);
-          console.log(sesgoResult);
-          console.log(sensibilidadResult);
-          console.log(contactoResult);
+          //set in dataAswers
+          dataAswers['compromiso'] = compromisoResult.text;
+          dataAswers['conocimiento'] = conocimientoResult.text;
+          dataAswers['sesgo'] = sesgoResult.text;
+          dataAswers['sensibilidad'] = sensibilidadResult.text;
+          dataAswers['contacto'] = contactoResult.text;
+
+          //   console.log(compromisoResult);
+          //   console.log(conocimientoResult);
+          //   console.log(sesgoResult);
+          //   console.log(sensibilidadResult);
+          //   console.log(contactoResult);
         }
 
 
