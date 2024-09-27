@@ -29,7 +29,8 @@
         @foreach ($resultados as $pregunta => $valor)
           <tr class=" border-b  dark:border-gray-700">
             <td class="px-3 py-1">
-              {{ $loop->iteration }}
+              {{-- {{ $loop->iteration }} --}}
+              {{ $pregunta }}
             </td>
             <td class="px-3 py-1">
               {{ $valor }}
