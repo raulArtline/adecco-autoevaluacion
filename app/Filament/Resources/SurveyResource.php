@@ -39,10 +39,10 @@ class SurveyResource extends Resource
                     ->label('Cliente')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\Select::make('question_id')
-                    ->label('Preguntas')
-                    ->relationship('question', 'name')
-                    ->required(),
+                // Forms\Components\Select::make('question_id')
+                //     ->label('Preguntas')
+                //     ->relationship('question', 'name')
+                //     ->required(),
                 // Forms\Components\Textarea::make('results')
                 //     ->columnSpanFull(),
             ]);
