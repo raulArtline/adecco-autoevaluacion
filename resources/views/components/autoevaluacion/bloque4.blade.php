@@ -1,5 +1,5 @@
 <article {{ $attributes }}>
-  <x-autoevaluacion.header title="Conocimiento sobre Diversidad, Equidad e Inclusión">
+  <x-autoevaluacion.header title="Conocimiento sobre Diversidad, Equidad e Inclusión" image="img/bg_4.png">
     A continuación queremos evaluar el nivel de conocimiento que tienes sobre esta materia. Recuerda que es una
     reflexión que sobre todo te ayudará a ti a crear un liderazgo más ético e inclusivo y así crecer personal y
     profesionalmente.

@@ -1,5 +1,5 @@
 <article {{ $attributes }}>
-  <x-autoevaluacion.header title="Datos demográficos" />
+  <x-autoevaluacion.header title="Introducción" image="img/bg_2.png" />
 
   <div class="flex flex-col lg:flex-row justify-between ">
     <div class="w-full lg:w-4/12 text-2xl order-2 lg:order-1">

@@ -1,5 +1,5 @@
 <article {{ $attributes }}>
-  <x-autoevaluacion.header title="Datos demográficos">
+  <x-autoevaluacion.header title="Datos demográficos" image="img/bg_1.png">
     Recuerda que este formulario es una herramienta de reflexión personal elaborado por la Fundación
     Adecco y que los resultados serán absolutamente anónimos. Únicamente nos servirán para conocer el nivel de
     compromiso y conocimiento de la Diversidad, Equidad e Inclusión y el nivel de sensibilidad de las empresas con

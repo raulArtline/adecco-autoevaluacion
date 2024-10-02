@@ -10,14 +10,14 @@
       <div class="mx-auto max-w-[1200px]">
         {{-- portada --}}
         <div id="intro">
-          <h1 class="mt-12 text-center font-lust text-5xl">Reflexiona y evalúa tu liderazgo inclusivo
+          <h1 class="mt-12 text-center font-lust text-4xl lg:text-5xl">Reflexiona y evalúa tu liderazgo inclusivo
             o
             para la inclusión.</h1>
           <div class="mt-10 lg:mt-20 gap-10 lg:px-20">
             {{-- foto --}}
-            <img class="max-w-full h-auto -mt-40" src="img/portada.webp" alt="">
-
-            <div class="bocadillo relative z-10 w-full max-w-[750px] mx-auto rounded border-2 border-dashed border-verde-adecco bg-white p-8 text-2xl -mt-32">
+            <img class="max-w-full h-auto lg:-mt-40" src="img/portada.webp" alt="">
+            {{-- boca --}}
+            <div class="bocadillo relative z-10 w-full max-w-[750px] mx-auto rounded border-2 border-dashed border-verde-adecco bg-white p-8 text-2xl lg:-mt-32">
               <p>
                 <span class="">Diversidad</span> es que te inviten a una fiesta. <span class="text-verde-adecco">Inclusión</span> es que te saquen a bailar, <span
                   class="text-verde-adecco">equidad</span> que se
@@ -26,20 +26,21 @@
                 bailar como si nadie te estuviera mirando.
               </p>
             </div>
+            {{-- btn --}}
             <button id="btn-start"
               class="btn text-base font-normal mt-5 mx-auto block rounded-full border-2 border-verde-adecco bg-verde-adecco text-white hover:border-verde-adecco hover:bg-transparent hover:text-verde-adecco">COMENZAR</button>
           </div>
         </div>
 
         {{-- contendido de la autevaluacion --}}
-        <section class="content-eval min-h-96 hidden w-full rounded-3xl bg-white mt-5 lg:mt-10 py-10 px-8 lg:px-16 shadow-xl">
-          <x-autoevaluacion.bloque1 id="block-1" />
-          <x-autoevaluacion.bloque2 id="block-2" class="pag hidden" />
-          <x-autoevaluacion.bloque3 id="block-3" class="pag hidden" />
-          <x-autoevaluacion.bloque4 id="block-4" class="pag hidden" />
-          <x-autoevaluacion.bloque5 id="block-5" class="pag hidden" />
-          <x-autoevaluacion.bloque6 id="block-6" class="pag hidden" />
-          <x-autoevaluacion.bloque7 id="block-7" class="pag hidden" />
+        <section class="content-eval relative min-h-96 hidden w-full rounded-3xl bg-white mt-5 lg:mt-10 py-5 px-8 lg:px-16 shadow-xl">
+          <x-autoevaluacion.bloque1 id="block-1" class="relative" />
+          <x-autoevaluacion.bloque2 id="block-2" class="pag relative hidden" />
+          <x-autoevaluacion.bloque3 id="block-3" class="pag relative hidden" />
+          <x-autoevaluacion.bloque4 id="block-4" class="pag relative hidden" />
+          <x-autoevaluacion.bloque5 id="block-5" class="pag relative hidden" />
+          <x-autoevaluacion.bloque6 id="block-6" class="pag relative hidden" />
+          <x-autoevaluacion.bloque7 id="block-7" class="pag relative hidden" />
           <x-autoevaluacion.navegacion />
           <button id="enviar" class="btn btn-primary hidden">Enviar datos</button>
         </section>
@@ -233,7 +234,7 @@
         const debug = true; //true para desbloquer el avance y ver console.log
 
         initSurvey();
-        // irPage(6);
+        irPage(1);
         // showFeedbacksLevels();
 
         debug && console.log("livewire:initialized");

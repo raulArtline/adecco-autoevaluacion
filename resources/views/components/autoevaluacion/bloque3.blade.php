@@ -1,5 +1,5 @@
 <article {{ $attributes }}>
-  <x-autoevaluacion.header title="Nivel de compromiso con la Diversidad, Equidad e Inclusión ">
+  <x-autoevaluacion.header title="Nivel de compromiso con la Diversidad, Equidad e Inclusión " image="img/bg_3.png">
     Todas las personas tenemos intereses y compromisos diferentes. Hay personas a las que les interesa mucho el
     cambio
     climático, otras que ponen mucho foco en la defensa de los derechos humanos y otras que tienen pasión por la

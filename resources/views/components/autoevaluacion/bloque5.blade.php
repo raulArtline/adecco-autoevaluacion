@@ -1,5 +1,5 @@
 <article {{ $attributes }}>
-  <x-autoevaluacion.header title="Sesgos inconscientes">
+  <x-autoevaluacion.header title="Sesgos inconscientes" image="img/bg_5.png">
     El enemigo de la inclusión que tiene mayor impacto en la actualidad son los sesgos inconscientes. Quizá no hayas
     escuchado hablar de ellos nunca, pero el primer paso para combatirlos es conocer su existencia. Los sesgos
     inconscientes son la forma más habitual de discriminación, impactando negativamente en el diseño de nuestros

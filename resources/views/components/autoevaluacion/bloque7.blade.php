@@ -1,5 +1,5 @@
 <article {{ $attributes }}>
-  <x-autoevaluacion.header title="Contacto">
+  <x-autoevaluacion.header title="Contacto" image="img/bg_7.png">
     ¿Tengo prejuicios o estereotipos sobre determinados grupos sociales? Hay grupos sociales que experimentan en el entorno laboral situaciones de discriminación, rechazo e incluso
     violencia. La discriminación puede ser: <strong>inconsciente</strong>, fruto de sesgos cognitivos aprendidos y fijados en nuestro subconsciente; <strong>conscientes</strong>,
     fruto de creencias limitantes o
