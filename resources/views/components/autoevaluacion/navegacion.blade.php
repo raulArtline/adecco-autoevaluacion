@@ -1,5 +1,5 @@
 <div>
-  <hr class="mt-20">
+  <hr class="mt-12">
   <div class="mx-auto mt-5 flex gap-3 w-full md:w-96 items-center justify-center md:justify-between">
     {{-- button rounded --}}
     <button id="btn-prev" class="btn-rounded pr-4 disabled">

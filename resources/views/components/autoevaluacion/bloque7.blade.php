@@ -12,7 +12,7 @@
   <div class="question text-center">
     <p class="mt-3 text-left">(*) Obligatorio.</p>
     <h4 class="mt-24 text-2xl text-verde-adecco">
-      <span class="p-number">43. </span> Mi <strong class="underline">nivel de contacto</strong> con las personas
+      <span class="p-number">43. </span> Mi <strong>nivel de contacto</strong> con las personas
       con <strong>discapacidad intelectual</strong> es...(*)
     </h4>
     <h4 class="font-semibold">(Siendo 0= Ningún contacto | 5= Algo de contacto | 10= Mucho contacto)</h4>
@@ -22,7 +22,7 @@
   <!--  -->
   <div class="question text-center">
     <h4 class="mt-24 text-2xl text-verde-adecco">
-      <span class="p-number">44. </span> Mi <strong class="underline">nivel de contacto</strong> con las personas con
+      <span class="p-number">44. </span> Mi <strong>nivel de contacto</strong> con las personas con
       problemas de <strong>salud mental</strong> es...(*)
     </h4>
     <h4 class="font-semibold">(Siendo 0= Ningún contacto | 5= Algo de contacto | 10= Mucho contacto)</h4>
@@ -32,7 +32,7 @@
   <!--  -->
   <div class="question text-center">
     <h4 class="mt-24 text-2xl text-verde-adecco">
-      <span class="p-number">45. </span> Mi <strong class="underline">nivel de contacto</strong> con las personas con
+      <span class="p-number">45. </span> Mi <strong>nivel de contacto</strong> con las personas con
       <strong>discapacidad física</strong> (movilidad reducida, amputaciones, parálisis...) es...(*)
     </h4>
     <h4 class="font-semibold">(Siendo 0= Ningún contacto | 5= Algo de contacto | 10= Mucho contacto)</h4>
@@ -42,7 +42,7 @@
   <!--  -->
   <div class="question text-center">
     <h4 class="mt-24 text-2xl text-verde-adecco">
-      <span class="p-number">46. </span> Mi <strong class="underline">nivel de contacto</strong> con las personas con
+      <span class="p-number">46. </span> Mi <strong>nivel de contacto</strong> con las personas con
       <strong>discapacidad visual</strong> (personas ciegas) es...(*)
     </h4>
     <h4 class="font-semibold">(Siendo 0= Ningún contacto | 5= Algo de contacto | 10= Mucho contacto)</h4>
@@ -53,7 +53,7 @@
   <!--  -->
   <div class="question text-center">
     <h4 class="mt-24 text-2xl text-verde-adecco">
-      <span class="p-number">47. </span> Mi <strong class="underline">nivel de contacto</strong> con las personas con
+      <span class="p-number">47. </span> Mi <strong>nivel de contacto</strong> con las personas con
       <strong>discapacidad auditiva</strong> (personas sordas) es...(*)
     </h4>
     <h4 class="font-semibold">(Siendo 0= Ningún contacto | 5= Algo de contacto | 10= Mucho contacto)</h4>
