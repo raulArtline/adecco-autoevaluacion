@@ -1,7 +1,7 @@
 <div>
   {{-- {{ $survey }} --}}
 
-  <div class="home min-h-dvh p-10">
+  <div class="home min-h-dvh p-5 md:p-8 lg:p-10">
     <div class="container mx-auto">
       <header>
         <img src="img/logo1_n.svg" alt="">
@@ -10,12 +10,12 @@
       <div class="mx-auto max-w-[1200px]">
         {{-- portada --}}
         <div id="intro">
-          <h1 class="mt-24 text-center font-lust text-5xl">Reflexiona y evalúa tu liderazgo inclusivo
+          <h1 class="mt-12 text-center font-lust text-5xl">Reflexiona y evalúa tu liderazgo inclusivo
             o
             para la inclusión.</h1>
-          <div class="mt-20 gap-10 px-20 lg:flex lg:items-start">
+          <div class="mt-10 lg:mt-20 gap-10 lg:px-20 lg:flex lg:items-start">
             <div>
-              <div class="bocadillo relative w-[500px] rounded border-2 border-dashed border-verde-adecco bg-white p-8 text-2xl">
+              <div class="bocadillo relative w-full lg:w-[500px] after:hidden xl:after:block rounded border-2 border-dashed border-verde-adecco bg-white p-8 text-2xl">
                 <p>
                   <span class="">Diversidad</span> es que te inviten a una fiesta. <span class="text-verde-adecco">Inclusión</span> es que te saquen a bailar, <span
                     class="text-verde-adecco">equidad</span> que se
@@ -28,12 +28,12 @@
                 class="btn text-base font-normal mt-10 rounded-full border-2 border-verde-adecco bg-verde-adecco text-white hover:border-verde-adecco hover:bg-transparent hover:text-verde-adecco">COMENZAR</button>
             </div>
             {{-- foto --}}
-            <img class="img-cover -ml-24 mt-5 h-[600px] max-h-[60vh]" src="img/img_chica.webp" alt="">
+            <img class="img-cover -ml-60 xl:-ml-24 mt-5 h-[600px] max-h-[60vh] hidden lg:block" src="img/img_chica.webp" alt="">
           </div>
         </div>
 
         {{-- contendido de la autevaluacion --}}
-        <section class="content-eval min-h-96 hidden w-full rounded-3xl bg-white mt-10 py-10 px-8 lg:px-16 shadow-xl">
+        <section class="content-eval min-h-96 hidden w-full rounded-3xl bg-white mt-5 lg:mt-10 py-10 px-8 lg:px-16 shadow-xl">
           <x-autoevaluacion.bloque1 id="block-1" />
           <x-autoevaluacion.bloque2 id="block-2" class="pag hidden" />
           <x-autoevaluacion.bloque3 id="block-3" class="pag hidden" />
@@ -231,10 +231,10 @@
         const btnNext = $('#btn-next');
         const btnPrev = $('#btn-prev');
 
-        const debug = false; //true para desbloquer el avance y ver console.log
+        const debug = true; //true para desbloquer el avance y ver console.log
 
         initSurvey();
-        // irPage(7);
+        // irPage(2);
         // showFeedbacksLevels();
 
         debug && console.log("livewire:initialized");
@@ -336,6 +336,11 @@
             $('.content-eval').classList.add('hidden');
             $('#resumen').classList.remove('hidden');
 
+            //   top page behaviour smooth
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+            });
             showFeedLevels();
             sendData(); //eviamos los datos a BBDD
           }

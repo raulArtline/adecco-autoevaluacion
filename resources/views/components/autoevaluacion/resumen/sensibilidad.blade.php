@@ -48,6 +48,7 @@
       <p class="mt-4">¡Tu liderazgo es fundamental para crear un mundo más justo y equitativo!</p>
     </div>
   </div>
+
   {{--  --}}
   <div class="feed-4 feed">
     <div>

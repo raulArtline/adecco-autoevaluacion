@@ -8,7 +8,7 @@
       <p class="block md:hidden">Ant.</p>
     </button>
     <div>
-      <span class="font-bold">Pagina <span class="current-page">1</span></span> de <span class="total-page">6</span>
+      <span class="font-bold">Página <span class="current-page">1</span></span> de <span class="total-page">6</span>
     </div>
     <button id="btn-next" class="btn-rounded pl-4">
       <p class="hidden md:block">Siguiente</p>

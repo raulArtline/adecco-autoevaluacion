@@ -1,8 +1,8 @@
 <article {{ $attributes }}>
   <x-autoevaluacion.header title="Datos demográficos" />
 
-  <div class="flex justify-between">
-    <div class="w-4/12 text-2xl">
+  <div class="flex flex-col lg:flex-row justify-between ">
+    <div class="w-full lg:w-4/12 text-2xl order-2 lg:order-1">
       <div class="question">
         <p>
           <span class="p-number font-bold">5. </span>
@@ -38,7 +38,7 @@
 
     </div>
     {{-- video --}}
-    <div class="w-7/12">
+    <div class="w-full lg:w-7/12 order-1 lg:order-2 mb-5">
       <lite-youtube videoid="t_opaRwRaeI"></lite-youtube>
       {{-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/t_opaRwRaeI?si=gsoJAjadkZC4kzYZ" title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
