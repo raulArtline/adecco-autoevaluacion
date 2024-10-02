@@ -28,7 +28,7 @@
             </div>
             {{-- btn --}}
             <button id="btn-start"
-              class="btn text-base font-normal mt-5 mx-auto block rounded-full border-2 border-verde-adecco bg-verde-adecco text-white hover:border-verde-adecco hover:bg-transparent hover:text-verde-adecco">COMENZAR</button>
+              class="btn text-base font-normal mt-5 mx-auto block rounded-full border-2 border-verde-adecco bg-verde-adecco text-white hover:border-verde-adecco hover:bg-white hover:text-verde-adecco">COMENZAR</button>
           </div>
         </div>
 
