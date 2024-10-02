@@ -231,10 +231,10 @@
         const btnNext = $('#btn-next');
         const btnPrev = $('#btn-prev');
 
-        const debug = true; //true para desbloquer el avance y ver console.log
+        const debug = false; //true para desbloquer el avance y ver console.log
 
         initSurvey();
-        irPage(1);
+        // irPage(1);
         // showFeedbacksLevels();
 
         debug && console.log("livewire:initialized");
