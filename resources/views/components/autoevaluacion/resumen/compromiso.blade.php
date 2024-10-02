@@ -27,7 +27,7 @@
   <div class="feed-5 feed">
     <p>Tienes un perfil <span class="level-compromiso font-bold">Champion de DE&I</span>
       <br>
-      Defiendes con fuerza la diversidad, equidad e inclusión, buscndo oportunidades para aprender y crecer en esta materia influyendo en tus pares
+      Defiendes con fuerza la diversidad, equidad e inclusión, buscando oportunidades para aprender y crecer en esta materia influyendo en tus pares
     </p>
   </div>
   <div class="feed-6 feed">

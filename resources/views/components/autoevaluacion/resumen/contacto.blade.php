@@ -8,7 +8,7 @@
       <p class="font-bold my-2">Consejos:</p>
       <ul class="[&_span]:underline [&_span]:font-bold">
         <li>Buscar oportunidades para conocer personas de diversos orígenes en tu comunidad.</li>
-        <li>Informate sobre los diferentes los desafíos que enfrentan las personas en nuestro país.</li>
+        <li>Infórmate sobre los diferentes los desafíos que enfrentan las personas en nuestro país.</li>
         <li>Participar en eventos o talleres que promuevan la diversidad y la inclusión.</li>
         <li>Reflexionar sobre tus propios prejuicios y estereotipos.</li>
       </ul>

@@ -4,8 +4,7 @@
     escuchado hablar de ellos nunca, pero el primer paso para combatirlos es conocer su existencia. Los sesgos
     inconscientes son la forma más habitual de discriminación, impactando negativamente en el diseño de nuestros
     procesos de selección, la evaluación del desempeño, la promoción de equipos o la toma de decisiones. ¿Te parece
-    si evalúas tus sesgos inconscientes? A continuación te presentamos los más habituales. Analiza cómo te influyen
-    y si crees que puede condicionar tus decisiones.
+    si evalúas tus sesgos inconscientes? A continuación te presentamos los más habituales. Analiza cómo te influyen y si condicionan tus decisiones.
   </x-autoevaluacion.header>
 
   <div class="question text-center">

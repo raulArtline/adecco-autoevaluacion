@@ -14,7 +14,7 @@
         <li><span>Empatizar:</span> Ponte en el lugar de las demás personas. Imagina cómo te sentirías si estuvieras en su situación.</li>
 
       </ul>
-      <p class="mt-4">Recuerda que todos podemos aprender y crecer. ¡Cada pequeño paso cuenta!</p>
+      <p class="mt-4">Recuerda que puedes aprender y crecer. ¡Cada pequeño paso cuenta!</p>
     </div>
   </div>
   {{--  --}}
@@ -26,7 +26,7 @@
       <ul class="[&_span]:underline [&_span]:font-bold">
         <li><span>Ampliar tus conocimientos:</span> busca oportunidades para aprender más sobre temas como interseccionalidad, privilegio y microagresiones.</li>
         <li><span>Conectar con la comunidad:</span> participa en eventos o grupos donde puedas conocer a personas de diferentes orígenes y experiencias.</li>
-        <li><span>Ser un aliado/a:</span> defiende los derechos de quienes se enfrentan a la discriminación. Un pequeño gesto puede marcar una gran diferencia.</li>
+        <li><span>Alíate:</span> defiende los derechos de quienes se enfrentan a la discriminación. Un pequeño gesto puede marcar una gran diferencia.</li>
         <li><span>Practicar la inclusión:</span> incorpora prácticas inclusivas en tu vida diaria. Utiliza una comunicación inclusiva, evita hacer suposiciones y celebra la
           diversidad.</li>
       </ul>
@@ -52,13 +52,13 @@
   <div class="feed-4 feed">
     <div>
       <h5><strong>106-140: Muy alta sensibilidad.</strong></h5>
-      <p>Tu compromiso con la diversidad y la inclusión es ejemplar. ¡Eres un verdadero agente de cambio! Para seguir inspirando a otros, te animamos a:</p>
+      <p>Tu compromiso con la diversidad y la inclusión es ejemplar. ¡Eres un verdadero agente de cambio! Para seguir inspirando al resto, te animamos a:</p>
       <p class="font-bold my-2">Consejos:</p>
       <ul class="[&_span]:underline [&_span]:font-bold">
-        <li><span>Investigar:</span> mantente actualizado sobre las últimas investigaciones y tendencias en el campo de la diversidad y la inclusión.</li>
+        <li><span>Investigar:</span> mantente al día sobre las últimas investigaciones y tendencias en el campo de la diversidad y la inclusión.</li>
         <li><span>Colaborar:</span> únete a organizaciones que trabajan para promover los derechos humanos y la justicia social.</li>
-        <li><span>Crear conciencia:</span> utiliza tus habilidades para incluir para crear materiales educativos y de sensibilización.</li>
-        <li><span>Celebrar la diversidad:</span> Promueve la celebración de las diferencias culturales y personales.</li>
+        <li><span>Crear conciencia:</span> utiliza tus habilidades para incluir y crear materiales educativos y de sensibilización.</li>
+        <li><span>Celebrar la diversidad:</span> Promueve la celebración de las diferencias culturales y personas.</li>
       </ul>
       <p class="mt-4">¡Gracias por tu dedicación a construir un mundo más inclusivo!</p>
     </div>

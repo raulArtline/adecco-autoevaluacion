@@ -35,7 +35,7 @@
   <div class="feed-3 feed">
     <div>
       <h5><strong>40-80 Madurez</strong> <br> Tienes buena base de conocimiento para seguir mejorando.</h5>
-      <p>¡Estás en el camino correcto! Tienen un nivel de conocimiento maduro. Ahora, es momento de convertirte en un agente de cambio.</p>
+      <p>¡Estás en el camino correcto! Tienes un nivel de conocimiento maduro. Ahora, es momento de convertirte en un agente de cambio.</p>
       <p class="font-bold my-2">Consejos:</p>
       <ul class="[&_span]:underline [&_span]:font-bold">
         <li><span>Lidera:</span> Propón iniciativas para promover la diversidad e inclusión en tu organización.</li>
@@ -54,7 +54,7 @@
       <ul class="[&_span]:underline [&_span]:font-bold">
         <li><span>Innova:</span> desarrolla nuevas estrategias para fomentar la diversidad e inclusión.</li>
         <li><span>Influye:</span> utiliza tu posición para impulsar cambios a nivel organizacional.</li>
-        <li><span>Mentora:</span> apoya a otros/as profesionales en su desarrollo.</li>
+        <li><span>Mentoriza:</span> apoya a otros/as profesionales en su desarrollo.</li>
         <li><span>Amplía tu red:</span> Conéctate con líderes inclusivos/as a nivel global.</li>
       </ul>
     </div>
